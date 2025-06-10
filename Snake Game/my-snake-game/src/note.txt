@@ -1,0 +1,17 @@
+Snake Game TODOs ( to do list )
+
+  - Criar o campo
+    - representação matrix
+  - Criar a cobra
+    - representação de lista vinculada individualmente
+    - crescimento da cobra
+    - inversão do direcionamento da cobra
+  - Estilos
+    - células da cobra
+    - células da comida
+  - Pressionamento de teclas
+  - Movimentos
+  - Comsumição da comida
+  - Morte
+  - Pontuação
+  - Jogo começar e jogo recomeçar
