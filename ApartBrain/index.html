@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApartBrain</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="website icon" href="img/WhatsApp_Image_2025-03-30_at_19.43.58_1309ea71-removebg-preview.png">
+    
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <img src="img/background.jpg" class="fundo-site">
+    <header id="menu">
+      <div class="fundo">
+        <div class="carousel-container">
+          <div class="carousel-track">
+            <div class="carousel-slide">
+              <img src="img/Untitled image (2).png" alt="Imagem 1">
+            </div>
+            <div class="carousel-slide">
+              <img src="img/Untitled image (4).png" alt="Imagem 2">
+            </div>
+            <div class="carousel-slide">
+              <img src="img/Untitled image (6).png" alt="Imagem 3">
+            </div>
+          </div>
+          <button class="carousel-button prev">&#10094;</button>
+          <button class="carousel-button next">&#10095;</button>
+          <script src="js/carousel.js"></script>
+        </div>
+          <div class="container">
+            <div class="logo">
+              <img src="img/WhatsApp_Image_2025-03-30_at_19.43.58_1309ea71-removebg-preview.png" alt="logo">
+              <h2>APARTBRAIN</h2>
+            </div>
+            <i class="ri-menu-line" onclick="openSidebar()" id="menuBtn"></i>
+            <div class="space">
+              <div class="space-button">
+                <button id="btn-home" class="animation" onclick="irHome()">Home<i class="ri-arrow-right-line"></i></button>
+                <button id="btn-feedback" onclick="mostrarFeed()" class="animation">Feedback<i class="ri-arrow-right-line"></i></button>
+              </div>
+              <div class="consultar">
+                  <button id="btn-consultar" onclick="mostrarConsult()" class="consult"><i class="ri-user-location-line"></i>Consulte aqui!</button>
+              </div>
+              
+              <div class="endereco">
+                <a href="https://www.google.com.br/maps/place/Av.+H%C3%A9lio+Pellegrino,+S%C3%A3o+Paulo+-+SP,+04513-100/@-23.5982287,-46.675348,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce57556d9ac09f:0x39c2324443ca1d1!8m2!3d-23.5982336!4d-46.6727731!16s%2Fg%2F1ymty0sx4?hl=pt-PT&entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D">
+                  <i class="ri-map-pin-line" id="loc2"></i>
+                </a>
+                <a href="https://www.google.com.br/maps/place/Av.+H%C3%A9lio+Pellegrino,+S%C3%A3o+Paulo+-+SP,+04513-100/@-23.5982287,-46.675348,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce57556d9ac09f:0x39c2324443ca1d1!8m2!3d-23.5982336!4d-46.6727731!16s%2Fg%2F1ymty0sx4?hl=pt-PT&entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" id="link">
+                  <i class="ri-map-pin-line"></i>
+                  Av.Hélio Pellegrino 876 - Vila Nova Conceição
+                </a>
+                <span>(endereço falso)</span> 
+              </div>
+            </div>
+
+            <div class="info-site">
+              <h1><span>ApartBrain – </span>seu lar, sua conquista</h1>
+              <p>
+                Especializada em imóveis de alto padrão, a ApartBrain oferece uma experiência exclusiva, com tecnologia de ponta, atendimento personalizado e curadoria impecável. Descubra o novo conceito de viver bem, com conforto, elegância e segurança em cada detalhe.
+              </p>
+              <div class="space-search">
+                <i class="ri-search-line"></i>
+                <input type="search" name="search" id="input-search" placeholder="Pesquisar">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="sidebar" id="sideBar">
+        <div class="close-btn">
+          <i class="ri-close-large-line" onclick="closeSidebar()"></i>
+        </div>
+        
+        <div class="sidebar-btn">
+          <button id="btn-home" onclick="irHome()">Home</button>
+          <button id="btn-feedback" onclick="mostrarFeed()">Feedback</button>
+          <button id="btn-consultar" onclick="mostrarConsult()">Consulte</button>
+        </div>
+        <div class="sidebar-end">
+          <h4>Nos visite! <i class="ri-map-pin-line"></i></h4>
+          <a href="https://www.google.com.br/maps/place/Av.+H%C3%A9lio+Pellegrino,+S%C3%A3o+Paulo+-+SP,+04513-100/@-23.5982287,-46.675348,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce57556d9ac09f:0x39c2324443ca1d1!8m2!3d-23.5982336!4d-46.6727731!16s%2Fg%2F1ymty0sx4?hl=pt-PT&entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D">
+            Av.Hélio Pellegrino 876 Vila Nova Conceição
+            <span>(ENDEREÇO INEXISTENTE)</span> 
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="box-products">
+        <div class="title" id="home">
+          <h2>OBSERVE NOSSOS PRODUTOS!</h2>
+        </div>
+        <div class="products">
+          <div class="box1">
+            <div class="product">
+              <img src="img/20250320112653_1.webp" alt="img1" class="lock">
+              <div class="info">
+                <h3>Espaço: 320m²</h3>
+                <h4>Jardim Vista Alegre - SP</h4>
+                <div class="prices">
+                  <span>R$900.000,00</span>
+                  <p>R$700.000,00</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="product">
+              <img src="img/ARQUITETURA-INDAIATUBA-DIANA-BROOKS.jpg" alt="img2" class="camera">
+              <div class="info">
+                <h3>Espaço: 500m²</h3>
+                <h4>Barra da Tijuca - RJ</h4>
+                <div class="prices">
+                  <span>R$6.800.000,00</span>
+                    <p>R$4.800.000,00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+                  
+          <div class="box2">
+            <div class="product">
+              <div>
+                <img src="img/28413c9f32b268ccaa5ea888f081de75.webp" alt="img3" class="video">
+                <div class="info">
+                  <h3>Espaço: 480m²</h3>
+                  <h4>Jardim Europa - SP</h4>
+                  <div class="prices">
+                    <span>R$5.000.000,00</span>
+                    <p>R$3.000.000,00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="product">
+              <div>
+                <img src="img/bueno-brandao-257-condominio-30.webp" alt="img4" class="router">
+                <div class="info">
+                  <h3>Espaço: 500m²</h3>
+                  <h4>Vila Nova Conceição - SP</h4>
+                  <div class="prices">
+                    <span>R$2.000.000,00</span>
+                    <p>R$900.000,00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+      <div class="box-email">
+        <h2>
+          <i class="ri-mail-line"></i>
+          Enviar por e-mail
+        </h2>
+        <div class="form-email">
+          <input type="text" id="email-name" placeholder="Nome">
+          <input type="number" id="email-number" placeholder="Telefone">
+          <input type="email" id="email-email" placeholder="E-mail">
+          <textarea id="email-comments" rows="5"></textarea>
+        </div>
+        <div id="spaceEmail" style="display: none; margin: 10px; font-size: 1.1em;"></div>
+          <button id="sendEmail">Enviar <i class="ri-send-plane-fill"></i></button>
+        </div>
+        <script>
+          const enviarEmail = document.getElementById('sendEmail');
+
+          enviarEmail.addEventListener('click', () => {
+            const campo = document.getElementById('spaceEmail');
+
+            const nameInput = document.getElementById('email-name');
+            const numberInput = document.getElementById('email-number');
+            const emailInput = document.getElementById('email-email');
+            const commentsInput = document.getElementById('email-comments');
+
+            const name = nameInput.value.trim();
+            const email = emailInput.value.trim();
+            const number = numberInput.value.trim();
+            const comments = commentsInput.value.trim(); 
+
+            if (!name || !number || !email || !comments) {
+              campo.style.display = "block";
+              campo.textContent = "Há um campo vazio.";
+              campo.style.color = "rgb(255, 105, 105)";
+              campo.style.textShadow = "1px 1px 20px rgb(145, 0, 0)";
+
+              setTimeout(() => {
+                campo.textContent = "";
+                campo.style.display = "none";
+              }, 3000);
+
+              return;
+            } else {
+              window.alert("Seu email foi enviado! Obrigado.");
+              campo.style.display = "none";
+              document.querySelectorAll('input').forEach(input => input.value = '');
+              document.querySelectorAll('textarea').forEach(textarea => textarea.value = '')
+            }
+          });
+        </script>
+      </div>
+    </main>
+
+      <section id="feedback">
+        <div class="feedback-container">
+          <h1>Sua opinião é importante para nós</h1>
+          <form>
+            <label for="feedback-name">Qual seu nome?</label>
+            <input type="text" id="feedback-name" name="name">
+            
+            <label for="feedback-email">E-mail:</label>
+            <input type="email" id="feedback-email" name="email">
+            
+            <label for="feedback-comments">Deixe seu comentário:</label>
+            <textarea id="feedback-comments" name="comments" rows="8"></textarea>
+          </form>
+
+          <div id="spaceFeed" style="display: none; margin: 0 auto 20px; font-size: 1.1em; margin-top: 10px"></div>
+          <button id="sendFeed" style="margin-top: 10px">Enviar feedback <i class="ri-send-plane-fill"></i></button>
+          <script>
+            const enviarFeed = document.getElementById('sendFeed');
+
+            enviarFeed.addEventListener('click', () => {
+              const campo = document.getElementById('spaceFeed');
+
+              const nameInput = document.getElementById('feedback-name');
+              const emailInput = document.getElementById('feedback-email');
+              const commentsInput = document.getElementById('feedback-comments');
+
+              const name = nameInput.value.trim();
+              const email = emailInput.value.trim();
+              const comments = commentsInput.value.trim(); 
+
+              if (!name || !email || !comments) {
+                campo.style.display = "block";
+                campo.textContent = "Há um campo vazio.";
+                campo.style.color = "rgb(255, 105, 105)";
+                campo.style.textShadow = "1px 1px 20px rgb(145, 0, 0)";
+
+                setTimeout(() => {  
+                  campo.textContent = "";
+                  campo.style.display = "none";
+                }, 3000);
+
+                return;
+              } else {
+                window.alert("Seu feedback foi enviado! Obrigado.");
+                campo.style.display = "none";
+                document.querySelectorAll('input').forEach(input => input.value = '');
+                document.querySelectorAll('textarea').forEach(textarea => textarea.value = '')
+              }
+            });
+          </script>
+        </div>
+        <div class="rating-section">
+            <span>Avalie sobre</span>
+            <div class="stars">
+              <span class="star" data-value="1">&#9733;</span>
+              <span class="star" data-value="2">&#9733;</span>
+              <span class="star" data-value="3">&#9733;</span>
+              <span class="star" data-value="4">&#9733;</span>
+              <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <input type="hidden" id="ratingValue" name="rating">
+        </div>
+      </section>
+
+      <section id="consultar">
+        <div class="form-container">
+          <h1>Consulte para o atendimento melhor</h1>
+          <form id="consultForm">
+            <label for="location">Onde?</label>
+            <input type="text" id="location" name="location" placeholder="Cidade, país">
+          
+            <label for="residents">Quem?</label>
+            <input type="text" id="residents" name="residents" placeholder="Moradores">
+          
+            <label for="property-type">Tipo</label>
+            <input type="text" id="property-type" name="property-type" placeholder="Casa, Apt...">
+          
+            <label for="garage">Garagem</label>
+            <select id="garage" name="garage">
+              <option value="sim">Sim</option>
+              <option value="nao">Não</option>
+            </select>
+          
+            <label for="neighborhood">Bairro?</label>
+            <input type="text" id="neighborhood" name="neighborhood" placeholder="Bairro onde mora">
+          
+            <label for="bedrooms">Dormitórios</label>
+            <input type="number" id="bedrooms" name="bedrooms" placeholder="Quantos quartos?">
+          
+            <label for="max-value">Valor máximo</label>
+            <input type="number" id="max-value" name="max-value" placeholder="$$$$$">
+          
+            <label for="min-value">Valor mínimo</label>
+            <input type="number" id="min-value" name="min-value" placeholder="$$$$$">
+          
+            <label for="specificity">Há alguma especificidade necessária?</label>
+            <textarea id="specificity" name="specificity" rows="5" placeholder="Conte-nos mais sobre seus desejos e detalhes para melhorar nossa pesquisa!"></textarea>
+          
+            <div id="spaceConsult" style="display: none; margin: 0 auto 20px; font-size: 1.1em; margin-top: 10px"></div>
+          
+            <button class="form" type="submit" id="sendConsult" style="margin: 0 auto;">Enviar formulário <i class="ri-send-plane-fill"></i></button>
+          </form>
+          
+          <script>
+            const form = document.getElementById('consultForm');
+            const campo = document.getElementById('spaceConsult');
+          
+            form.addEventListener('submit', (e) => {
+              e.preventDefault(); // impede o reload da página
+          
+              const neighborhood = document.getElementById('neighborhood').value.trim();
+              const bedrooms = document.getElementById('bedrooms').value;
+              const maxvalue = document.getElementById('max-value').value;
+              const minvalue = document.getElementById('min-value').value;
+              const specificity = document.getElementById('specificity').value.trim();
+          
+              if (!neighborhood || !bedrooms || !maxvalue || !minvalue || !specificity) {
+                campo.style.display = "block";
+                campo.style.fontFamily = "'Quicksand', sans-serif";
+                campo.textContent = "Há um campo vazio.";
+                campo.style.color = "rgb(255, 105, 105)";
+                campo.style.textShadow = "1px 1px 20px rgb(145, 0, 0)";
+          
+                setTimeout(() => {
+                  campo.textContent = "";
+                  campo.style.display = "none";
+                }, 3000);
+              } else {
+                alert("Seu formulário foi enviado! Obrigado.");
+                campo.style.display = "none";
+                form.reset(); // limpa o formulário depois do envio
+              }
+            });
+          </script>
+      </section>
+
+      <div class="btn-up">
+        <button onclick="subir()"><i class="ri-arrow-up-s-line"></i></button>
+      </div>
+
+      <div id="sideBox" class="side-box">
+        <p>Aproveite os descontos, enquanto há tempo!</p>
+        <div id="countdown"></div>
+        <button onclick="closeBox()">Fechar</button>
+      </div>
+
+      <footer>
+          <div class="box-footer">
+            <div class="space-footer">
+              <p>PARCEIRO CREDENCIADO</p>
+              <a href="https://www.luxuryproperties.com.br/">
+                <img src="img/logo-topo.png" alt="parceiro" width="150px" style="margin-bottom: 20px;">
+              </a>
+            </div>
+            
+            <div class="linha"></div>
+
+            <div class="space-footer">
+              <p>CONHEÇA O NOSSO TRABALHO</p>
+              <button class="insta">
+                <a href="https://www.instagram.com/">
+                  Instagram
+                  <i class="ri-instagram-line"></i>
+                </a>
+              </button>
+            </div>
+
+            <div class="linha"></div>
+
+            <div class="space-footer">
+              <p>ENTRE EM CONTATO CONOSCO</p>
+              <button class="whats">
+                <a href="https://web.whatsapp.com/">
+                  <i class="ri-whatsapp-line"></i>
+                  (11) 98439-3259
+                </a>
+              </button>
+            </div>
+          </div>
+      </footer>
+      <div class="footer-extra">
+        <div class="direitos">
+          <img src="img/WhatsApp_Image_2025-03-30_at_19.43.58_1309ea71-removebg-preview.png" width="60px">
+          <p>2025 - Todas as fotos retiradas do Google</p>
+        </div>
+        <div class="eu">
+          <p>Desenvolvido por <span style="cursor: pointer;"><a href="https://www.instagram.com/luc4s_.r3is/">Lucas Zorzete</a></span></p>
+        </div>
+      </div>
+  </header>
+</body>
+  
+</html>

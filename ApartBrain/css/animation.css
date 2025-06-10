@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:wght@400;700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Manrope:wght@200..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.animation {
+    position: relative;   /* FICA RESERVANDO O ELEMENTO ABSOLUTE DENTRO DELE */
+}
+.animation::after { 
+    content: "";  /* ELEMENTO VAZIO PARA A LINHA */
+    position: absolute;   /* A LINHA SE MOVE NÃO SAINDO DE DENTRO DO ELEMENTO RELATIVE */
+    background-color: var(--color);
+    transition: width 0.3s ease;  /* TRANSIÇÃO ENQUANTO ELA SE EXPÕE */
+    left: 0;   /* LINHA VEM DA DIREITA */
+    width: 0; /* LINHA NÃO ESTÁ EXPOSTA */ height: 2px; /* ESPRESSURA DA LINHA */
+    margin-top: 2.7em;
+}
+.animation:hover::after {
+    width: 90%;  /* A LINHA SE EXPÕE TOTALMENTE */
+}
+
+.carousel-container {
+    width: 100%; height: 700px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .carousel-slide img {
+    width: 100%; height: 650px;
+    display: block;
+    box-shadow: 10px 10px 20px rgb(150, 150, 150);
+  }
+
+  /* Botões de navegação */
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 1.6em;
+  }
+
+  .carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .carousel-button.prev {
+    left: 10px;
+  }
+
+  .carousel-button.next {
+    right: 10px;
+  }
+
+.side-box {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 50px;
+    border-radius: 5px;
+    display: none;
+    font-size: 1.7em;
+    font-family: "Quicksand", sans-serif;
+    z-index: 1000;
+}
+  
+.side-box p {
+    font-size: .7em;
+}
+
+.side-box button {
+    font-size: .5em;
+    margin-top: 40px;
+    background: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-family: "Quicksand", sans-serif;
+}
+
+.side-box button:hover {
+    background: rgb(205, 0, 0);
+}

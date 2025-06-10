@@ -1,0 +1,94 @@
+@media (max-width: 1040px) {
+    main {
+        flex-direction: column;
+        width: 100%;
+        transform: translate(-50%, -40%);
+    }
+    main .introduction-box {  
+        align-items: center;
+
+        button {
+            margin-bottom: 2em;
+        }
+    }
+    main .follow-box {
+        flex-direction: row;
+        font-size: 1.4em;
+        position: relative;
+    
+        h4 {
+            transform: none;
+        }
+    } 
+    .medias-box {
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    
+        a {
+            font-size: 1.7em;
+        }
+        .youtube {
+            font-size: 2em;
+        }
+    }
+}
+
+@media (max-width: 1106px) {
+    .about-container {
+        flex-direction: column;
+
+        img {
+            width: 100%; height: auto;
+        }
+    }
+    .about-container.reverso {
+        flex-direction: column-reverse;
+    }
+    section .box-about {
+        width: 80%;
+    }
+    section .about_content-2 .subtitle::before {
+        left: 55%;
+    }
+}
+
+@media (max-width: 700px) {
+    .btn-container, 
+    .account {
+        display: none;
+    }
+    .btn-menu {
+        display: block;
+    }
+    main .follow-box {
+        font-size: 1.2em;
+    }
+    section .about-container {
+        gap: 3em;
+        margin: 12em 3em 12em 3em;
+    }
+}
+
+@media (max-width: 685px) {
+    main .introduction-box {
+        width: 100%;
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            margin: .7em;
+        }
+    }
+    .guide {
+        margin-left: 2em;
+    }
+}
+
+@media (max-width: 648px) {
+    .box-info-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}

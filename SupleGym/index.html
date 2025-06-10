@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>SupleGym</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="stylesheet" href="css/sidebar-extended.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/interactions.css">
+
+    <link rel="website icon" href="img/logo.png">
+</head>
+<body>
+    <div class="box-reader-warning" id="readerWarning">
+        <h1>Selecione um texto</h1>
+    </div>
+
+    <aside class="box-view-close">
+        <button id="eye-view" onclick="openView()">
+            <i class="ri-eye-fill"></i>
+            <p>Recursos Assistivos</p>
+        </button>
+    </aside>
+
+    <aside class="box-view-open" id="view">
+        <div class="container-box-view">
+            <div class="logo-box-view">
+                <img src="img/logo-draw.png" width="30px">
+                <img src="img/logo-word.png" width="100px">
+            </div>
+            <i class="ri-close-large-line" onclick="closeView()"></i>
+        </div>
+        <div class="box-view" id="boxView">
+            <div class="interaction">
+                <button id="toggleColors">
+                    <i class="ri-palette-fill"></i>
+                    <h3>Cores da página</h3>
+                </button>
+            </div>
+            <div class="interaction">
+                <button id="toggleSaturated">
+                    <i class="ri-contrast-drop-fill"></i>
+                    <h3>Intensidade das cores</h3>
+                </button>
+            </div>
+            <div class="interaction">
+                <button id="toggleSize">
+                   <i class="ri-font-size-2"></i>
+                    <h3>Tamanho da fonte</h3>
+                </button>
+            </div>
+            <div class="interaction">
+                <button id="reader">
+                    <i class="ri-user-voice-line"></i>
+                    <h3>Leitor de sites</h3>
+                </button>
+            </div>
+            <div class="interaction">
+                <button id="toggleBold">
+                    <i class="ri-font-sans"></i>
+                    <h3>Letras destacadas</h3>
+                </button>
+            </div>
+            <div class="interaction">
+                <button id="toggleContrast">
+                    <i class="ri-contrast-drop-2-fill"></i>
+                    <h3>Contraste de cores</h3>
+                </button>
+            </div>
+            <script src="js/interactions.js"></script>
+        </div>
+    </aside>
+    
+    <header>
+        <div class="side-bar" id="sideBar">
+            <div class="box-sidebar">
+                <div class="container-sidebar">
+                    <div class="logo" id="logo-responsive">
+                        <img id="logoDraw" src="img/logo-draw-2-removebg-preview.png" width="60px" height="60px">
+                        <img id="logoWord" src="img/logo-word-2-removebg-preview.png" width="200px" height="60px">
+                    </div>
+                    <i class="ri-close-large-line" onclick="closeSideBar()"></i>
+                </div>
+
+                <div class="list-btn-sidebar">
+                    <button>
+                        <i class="ri-menu-line"></i>
+                        Categorias
+                    </button>
+                    <button id="loginBtn">
+                        <i class="ri-user-line"></i>  
+                        <div class="info-login">
+                            <p>Seja bem vindo!</p>
+                            <span><a href="#">Entre</a> ou <a href="#">Cadastra-se</a></span>
+                        </div>
+                    </button>
+                    <button>Whey Protein</button>
+                    <button>TOP 20</button>
+                    <button>Marca</button>
+                    <button>Kits</button>
+                    <button>Objetivos</button>
+                    <button>Combos</button>
+                    <button>Outlet</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-menu">
+            <nav class="menu-line">
+                <button>
+                    <i class="ri-menu-line" onclick="openSideBar()"></i>
+                </button>
+            </nav>
+            <nav class="logo">
+                <img src="img/logo.png" alt="logotipo" width="130px" height="130px">
+            </nav>
+            <nav class="logo" id="logo-responsive">
+                <img id="logoDraw" src="img/logo-draw-2-removebg-preview.png" width="60px" height="60px">
+                <img id="logoWord" src="img/logo-word-2-removebg-preview.png" width="200px" height="60px">
+            </nav>
+            <nav class="search">
+                <button id="mic-btn">
+                    <i class="ri-mic-fill"></i>
+                </button>
+                <input id="input-search" type="search" placeholder="Buscar produto">
+            </nav>
+            <nav class="btn-menu">
+                <div class="login">
+                    <button>
+                      <i class="ri-user-line"></i>  
+                    </button>
+                    <div class="info-login">
+                        <p>Seja bem vindo!</p>
+                        <span><a href="#">Entre</a> ou <a href="#">Cadastra-se</a></span>
+                    </div>
+                </div>
+                <div class="box-contact">
+                    <button class="contact">
+                        <a href="#">
+                            <i class="ri-phone-fill"></i>
+                            Fale conosco
+                        </a>
+                    </button>
+                    <button class="cartBtn">
+                        <svg class="cart" fill="rgb(114, 47, 146)" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="item"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <div class="container-btn">
+            <nav class="search" id="search-responsive">
+                <button id="mic-btn-responsive">
+                    <i class="ri-mic-fill"></i>
+                </button>
+                <input id="input-search-responsive" class="search-responsive" type="search" placeholder="Buscar produto">
+            </nav>
+            <ul class="btn-list">
+                <li id="btn-background">
+                    <i class="ri-menu-line"></i>
+                    Categorias
+                </li>
+                <li class="animation">Whey Protein</li>
+                <li class="animation">TOP 20</li>
+                <li class="animation">Marca</li>
+                <li class="animation">Kits</li>
+                <li class="animation">Objetivos</li>
+                <li class="animation">Combos</li>
+                <li id="btn-background" class="outlet">Outlet</li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="carousel-container">
+            <div class="carousel-track transform-carousel" id="track">
+                <div class="carousel-slide">
+                    <img src="img/img1-carousel-container.webp" alt="img1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/img2-corousel-container.webp" alt="img2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/img3-carousel-container.webp" alt="img3">
+                </div>
+            </div>
+            <button class="carousel-button next">
+                &#10094;
+            </button>
+            <button class="carousel-button prev">
+                &#10095;
+            </button> 
+        </div>
+    </main>
+
+    <section class="section-products">
+        <div class="objectives-container">
+            <div class="box-objective">
+                <h2>perder gordura</h2>
+            </div>
+            <div class="box-objective">
+                <h2>massa muscular</h2>
+            </div>
+            <div class="box-objective">
+                <h2>ganhar energia</h2>
+            </div>
+            <div class="box-objective">
+                <h2>qualidade de vida</h2>
+            </div>
+        </div>
+        <h1 class="title-box-products">Ofertas Irrecusáveis</h1>
+        <div class="container-box-products">
+            <div class="box-products">
+                <div class="product one">
+                    <div class="product-img">
+                        <img src="img/product1.png" alt="product4">
+                    </div>
+                    <h4 id="discount">15% OFF</h4>
+                     <div class="info-product">
+                        <p id="name-product">Creatina Hardcore (300g) IntegralMedica</p>
+                        <p id="price-before">De: <span id="price-line-through">R$89,99</span></p>
+                        <p>Por: <span id="price-now">R$75,54</span><br>
+                        à vista no PIX/Boleto</p>
+                        <div class="btn-product">
+                            <button id="buy-now">Comprar agora!</button>
+                            <button id="add-cart">
+                                <i class="ri-shopping-cart-2-fill"></i>
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product two">
+                    <div class="product-img">
+                        <img src="img/product2.png" alt="product4">
+                    </div>
+                    <h4 id="discount">15% OFF</h4>
+                    <div class="info-product">
+                        <p id="name-product">Creamass (3Kgs) Integralmedica</p>
+                        <p id="price-before">De: <span id="price-line-through">R$110,58</span></p>
+                        <p>Por: <span id="price-now">R$89,57</span><br>
+                        à vista no PIX/Boleto</p>
+                        <div class="btn-product">
+                            <button id="buy-now">Comprar agora!</button>
+                            <button id="add-cart">
+                                <i class="ri-shopping-cart-2-fill"></i>
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product three">
+                    <div class="product-img">
+                        <img src="img/product3.png" alt="product4">
+                    </div>
+                    <h4 id="discount">Grátis</h4>
+                     <div class="info-product">
+                        <p id="name-product">Whey 100% Pure (refil-900g) Integralmedica</p>
+                        <p id="price-before">De: <span id="price-line-through">R$ 219,90</span></p>
+                        <p>Por: <span id="price-now">R$116,91</span><br>
+                        à vista no PIX/Boleto</p>
+                        <div class="btn-product">
+                            <button id="buy-now">Comprar agora!</button>
+                            <button id="add-cart">
+                                <i class="ri-shopping-cart-2-fill"></i>
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product four">
+                    <div class="product-img">
+                        <img src="img/product4.png" alt="product4">
+                    </div>
+                    <h4 id="discount">10% OFF</h4>
+                     <div class="info-product">
+                        <p id="name-product">100% Whey Protein (909g) Optimum Nutrition</p>
+                        <p id="price-before">De: <span id="price-line-through">R$ 365,46</span></p>
+                        <p>Por: <span id="price-now">R$319,75</span><br>
+                        à vista no PIX/Boleto</p>
+                        <div class="btn-product">
+                            <button id="buy-now">Comprar agora!</button>
+                            <button id="add-cart">
+                                <i class="ri-shopping-cart-2-fill"></i>
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-products">
+                <div class="product five">
+                    <div class="product-img">
+                        <img src="img/product5.webp" alt="product4">
+                    </div>
+                    <h4 id="discount">10% OFF</h4>
+                     <div class="info-product">
+                        <p id="name-product">Creatina Titanium (150g) Max Titanium</p>
+                        <p id="price-before">De: <span id="price-line-through">R$70,65</span></p>
+                        <p>Por: <span id="price-now">R$39,97</span><br>
+                        à vista no PIX/Boleto</p>
+                        <div class="btn-product">
+                            <button id="buy-now">Comprar agora!</button>
+                            <button id="add-cart">
+                                <i class="ri-shopping-cart-2-fill"></i>
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product six">
+                    <div class="product-img">
+                        <img src="img/product6.png" alt="product4">
+                    </div>
+                    <h4 id="discount">10% OFF</h4>
+                     <div class="info-product">
+                        <p id="name-product">Top Whey 3W + Performance (1800g) Max Titanium</p>
+                        <p id="price-before">De: <span id="price-line-through">R$469,90</span></p>
+                        <p>Por: <span id="price-now">R$293,31</span><br>
+                        à vista no PIX/Boleto</p>
+                        <div class="btn-product">
+                            <button id="buy-now">Comprar agora!</button>
+                            <button id="add-cart">
+                                <i class="ri-shopping-cart-2-fill"></i>
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product seven">
+                    <div class="product-img">
+                        <img src="img/product7.png" alt="product4">
+                    </div>
+                    <h4 id="discount">10% OFF</h4>
+                     <div class="info-product">
+                        <p id="name-product">Horus (300g) Max Titanium</p>
+                        <p id="price-before">De: <span id="price-line-through">R$127,00</span></p>
+                        <p>Por: <span id="price-now">R$92,34</span><br>
+                        à vista no PIX/Boleto</p>
+                        <div class="btn-product">
+                            <button id="buy-now">Comprar agora!</button>
+                            <button id="add-cart">
+                                <i class="ri-shopping-cart-2-fill"></i>
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product eight">
+                    <div class="product-img">
+                        <img src="img/product8.png" alt="product4">
+                    </div>
+                    <h4 id="discount">20% OFF</h4>
+                     <div class="info-product">
+                        <p id="name-product">Dark Whey (900G) Integral Medica</p>
+                        <p id="price-before">De: <span id="price-line-through">R$206,10</span></p>
+                        <p>Por: <span id="price-now">R$166,94</span><br>
+                        à vista no PIX/Boleto</p>
+                        <div class="btn-product">
+                            <button id="buy-now">Comprar agora!</button>
+                            <button id="add-cart">
+                                <i class="ri-shopping-cart-2-fill"></i>
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section-categories">
+        <h1 class="title-box-products">Por categoria</h1>
+        <div class="container-categories">
+            <div class="category">
+                <div class="category-img">
+                    <img src="img/product2.png" alt="category1" width="160px">
+                </div>
+                <h2>Proteínas</h2>
+            </div>
+            <div class="category">
+                <div class="category-img">
+                    <img src="img/product5.webp" alt="category2" width="160px">
+                </div>
+                <h2>Creatinas</h2>
+            </div>
+            <div class="category">
+                <div class="category-img">
+                    <img src="img/product7.png" alt="category3" width="160px">
+                </div>
+                <h2>Pré-treinos</h2>
+            </div>
+            <div class="category">
+                <div class="category-img">
+                    <img src="img/product9.png" alt="category4" width="160px">
+                </div>
+                <h2>Aminoácidos</h2>
+            </div>
+            <div class="category">
+                <div class="category-img">
+                    <img src="img/product10.png" alt="category5" width="160px">
+                </div>
+                <h2>Termogênicos</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-user-objectives">
+        <h1 class="title-box-products">Qual seu objetivo?</h1>
+        <div class="container-user-objectives">
+            <div class="user-objective one">
+                <img src="img/objective1.webp" alt="objective1">
+                <div class="user-objective-info">
+                    <h2 id="title-user-objective">Ganhar peso</h2>
+                    <button id="btn-user-objective">Quero já!</button>
+                </div>
+            </div>
+            <div class="user-objective two">
+                <img src="img/objective2.webp" alt="objective2">
+                <div class="user-objective-info">
+                    <h2 id="title-user-objective" style="font-size: 3.1em;">Ganhar massa</h2>
+                    <button id="btn-user-objective" style="margin-top: 150px">Quero já!</button>
+                </div>
+            </div>
+            <div class="user-objective three">
+                <img src="img/objective3.webp" alt="objective3">
+                <div class="user-objective-info">
+                    <h2 id="title-user-objective" style="font-size: 3em;">Perder gordura</h2>
+                    <button id="btn-user-objective" style="margin-top: 155px">Quero já!</button>
+                </div>
+            </div>
+            <div class="user-objective four">
+                <img src="img/objective4.webp" alt="objective4">
+                <div class="user-objective-info">
+                    <h2 id="title-user-objective">Definição</h2>
+                    <button id="btn-user-objective">Quero já!</button>
+                </div>
+            </div>
+            <div class="user-objective five">
+                <img src="img/objective5.webp" alt="objective5">
+                <div class="user-objective-info">
+                    <h2 id="title-user-objective">Mais energia</h2>
+                    <button id="btn-user-objective">Quero já!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-tips">
+        <div class="container-tips">
+            <div class="tip">
+                <i class="ri-money-dollar-circle-fill"></i>
+                <p><span>Economize</span> com nosso <br>
+                sistema de <span>Cashback</span></p>
+            </div>
+            <div class="line"></div>
+            <div class="tip">
+                <i class="ri-percent-fill"></i>
+                <p><span>10% OFF</span> à vista <br>
+                no <span>Boleto/PIX</span></p>
+            </div>
+            <div class="line"></div>
+            <div class="tip">
+                <i class="ri-truck-fill"></i>
+                <p><span>Frete Grátis</span><br>
+                consulte as condições</p>
+            </div>
+            <div class="line"></div>
+            <div class="tip">
+                <img src="img/logo-pretoebranco.png" alt="logo preto e branco" width="60px">
+                <p>Troque seus pontos <br>
+                <span>por descontos</span></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-suplegym">
+        <div class="box-info-footer">
+            <div class="footer-info">
+                <div class="info-logo">
+                    <img src="img/logo-draw.png" id="logoDraw" alt="desenho logo" width="100px">
+                    <img src="img/logo-word.png" id="logoWord" alt="palavra logo" width="200px">
+                </div>
+                <div class="contact-info">
+                    <p><span>Horário de atendimento <br></span>
+                    Das 09h - 18h</p>
+                    <p><span>Contato</span> <br>
+                    (11) 12345-6789</p>
+                    <p><span>Email</span> <br>
+                    suplegym@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-info">
+                <div class="list-info">
+                    <p><span>Institucionais</span></p>
+                    <ul>
+                        <li>A empresa</li>
+                        <li>Segurança</li>
+                        <li>Glossário</li>
+                        <li>Fabricantes</li>
+                        <li>Afiliados</li>
+                        <li>Política de privacidade</li>
+                    </ul>
+                </div>
+                <div class="box-medias">
+                    <p><span>Redes sociais</span></p>
+                    <div class="medias">
+                        <a href="https://www.youtube.com/" id="youtube"><i class="ri-youtube-fill"></i></a>
+                        <a href="https://www.instagram.com/" id="insta"><i class="ri-instagram-line"></i></a>
+                        <a href="https://www.facebook.com/?locale=pt_BR" id="face"><i class="ri-facebook-circle-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-info">
+                <div class="list-info">
+                    <p><span>Ajuda e suporte</span></p>
+                    <ul>
+                        <li>Como comprar</li>
+                        <li>Entregas</li>
+                        <li>Pagamentos</li>
+                        <li>Trocas e Devoluções</li>
+                        <li>Fale conosco</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-info">
+                <div class="info-partners">
+                    <p><span>Parceiro credenciado</span></p>
+                    <a href="https://www.madrugaosuplementos.com.br/?srsltid=AfmBOoo23zdZcf1XWisgsBn2gVwCCXXf_vnPF5qyd0_lLJKpAt4ud--M"><img src="img/madrugao-logo___5c5e82aeed144cea10016dbbd5e4c5b9.svg" alt="partner"></a>
+                </div>
+                <div class="security">
+                    <p><span>Verificado por:</span></p>
+                    <img src="img/lets-encrypt-icon___cce523cf5e568eeea5ae3f61eb3ed3ba.svg" alt="security1">
+                    <img src="img/vtex-pci-icon___6a56e16c935ba5d4bb59eadca657df71.svg" alt="security2">
+                    <img src="img/ebit-icon___2e4d147419196fcd009d3ba9d1d1917a.svg" alt="security3">
+                </div>
+            </div>
+        </div>
+        <div class="footer-extra">
+            <p>2025 © Todos os direitos reservados.</p>
+            <p><a href="https://www.instagram.com/luc4s_.r3is">Lucas Zorzete dos Reis</a></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

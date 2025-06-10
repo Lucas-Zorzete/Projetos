@@ -1,0 +1,343 @@
+body.inverted {
+    --primary-color: #007acc;           /* Azul forte acessível */
+    --primary-color-op: rgba(0, 122, 204, 0.5); /* Versão opaca */
+    --quick: 'Arial', sans-serif;       /* Troca opcional se quiser fonte mais clara */
+    --julius: 'Arial', sans-serif;
+    --mulish: 'Arial', sans-serif;
+
+    background-color: #000;
+    color: #ffffff;                     /* Texto claro */
+  }
+  
+  body.inverted .container-menu, 
+  body.inverted .container-btn, 
+  body.inverted .container-btn li, 
+  body.inverted .container-menu a {
+      background-color: #000;
+      color: #fff;
+  }
+
+  body.inverted .box-view-open {
+      background-color: #aaaaaa;
+  }
+
+  body.inverted .box-view .interaction button {
+    background-color: #000;
+    color: #fff;
+  }
+
+  body.inverted .container-box-view,
+  body.inverted .container-box-view i,
+  body.inverted #eye-view {
+      background-color: var(--primary-color);
+      color: #000;
+  }
+
+  body.inverted .section-categories {
+    background-color: #aaaaaa;
+  }
+
+  body.inverted li {
+      color: #000;
+  }
+
+  body.inverted .ri-mic-fill {
+      color: #fff;
+  }
+
+  body.inverted #buy-now {
+      color: #000;
+  }
+  body.inverted #add-cart {
+      color: #000;
+  }
+
+  body.inverted .animation::after {
+      background-color: var(--primary-color);
+  }
+
+  body.inverted .category .category-img {
+    background-color: #d8d8d8;
+  }
+  body.inverted .category:hover .category-img {
+      background-color: var(--primary-color-op);
+  }
+
+  body.inverted a {
+    color: #66ccff;
+  }
+  
+  body.inverted .product #price-before {
+    color: #aaaaaa;
+  }
+  
+  body.inverted .product #price-now {
+    color: #66ccff;
+  }
+  
+  body.inverted input,
+  body.inverted button {
+    background-color: #1e1e1e;
+    border-color: #66ccff;
+  }
+  
+  body.inverted .btn-list #btn-background {
+    background-color: #66ccff;
+    color: #000;
+  }
+  
+  body.inverted footer,
+  body.inverted footer p,
+  body.inverted footer span,
+  body.inverted footer .footer-info .medias i,
+  body.inverted footer .footer-info {
+    background-color: #003d66;
+    color: #000;
+  }
+
+  body.inverted footer .footer-extra p,
+  body.inverted footer .footer-extra a
+   {
+    color: #000;
+  }
+
+  body.saturated {
+    --primary-color: #ff00ff;                 /* Magenta neon */
+    --primary-color-op: rgba(255, 0, 255, 0.5);
+    --quick: 'Arial', sans-serif;
+    --julius: 'Arial', sans-serif;
+    --mulish: 'Arial', sans-serif;
+  }
+  
+  body.saturated .box-view-open {
+    background-color: #ff99ff;
+  }
+  
+  body.saturated .container-box-view,
+  body.saturated .container-box-view i,
+  body.saturated #eye-view {
+    background-color: var(--primary-color);
+    color: #000;
+  }
+  
+  body.saturated .section-categories {
+    background-color: #5e5e5e;
+  }
+  
+  body.saturated .animation::after {
+    background-color: var(--primary-color);
+  }
+  
+  body.saturated .category .category-img {
+    background-color: #404040;
+  }
+  body.saturated .category:hover .category-img {
+    background-color: var(--primary-color-op);
+  }
+  
+  body.saturated a {
+    color: #00ffff;
+  }
+  
+  body.saturated .product #price-before {
+    color: #cccccc;
+  }
+  
+  body.saturated .product #price-now {
+    color: #ff00ff;
+  }
+  
+  body.saturated .btn-list #btn-background {
+    background-color: #ff00ff;
+    color: #000;
+  }
+
+  body.saturated .btn-product #buy-now {
+    background-color: var(--primary-color);
+  }
+  body.saturated .btn-product #add-cart {
+    background-color: #ff4cff;
+  }
+  
+  body.saturated footer,
+  body.saturated footer .footer-info .medias i,
+  body.saturated footer .footer-info {
+    background-color: #660066;
+    color: #fff;
+  }
+  body.saturated footer .footer-extra p,
+  body.saturated footer .footer-extra a
+   {
+    color: #000;
+  }
+  
+.font-size,
+.font-size span,
+.font-size a,
+.font-size li,
+.font-size label,
+.font-size input {
+    font-size: 1.1em !important;
+}
+
+.font-size section i {
+  font-size: 1.8em;
+}
+.font-size .search button i {
+  font-size: 2.4em;
+}
+.font-size .container-btn .btn-list {
+  font-size: 1.22em;
+}
+.font-size .carousel-button {
+  font-size: 2.5em;
+  width: 70px; height: 70px;
+}
+.font-size .box-objective {
+  font-size: 1.2em; 
+  width: 400px;
+}
+.font-size .title-box-products {
+  font-size: 2.5em;
+}
+.font-size .info-product {
+  font-size: 1.3em;
+}
+.font-size .category {
+  font-size: 1.2em;
+}
+.font-size .user-objective .user-objective-info h2 {
+  width: 400px;
+}
+.font-size .box-view-open {
+  width: 33em;
+  top: 23.5%;
+}
+.font-size .interaction button i {
+  font-size: 2.3em;
+}
+.font-size .container-box-view i {
+  font-size: 1.75em;
+}
+.font-size .interaction button h3 {
+  font-size: 1.5em;
+}
+.font-size .side-bar .list-btn-sidebar button {
+  font-size: 1.3em;
+}
+
+.font-bold,
+.font-bold span,
+.font-bold a,
+.font-bold li,
+.font-bold label,
+.font-bold input,
+.font-bold button,
+.font-bold h1,
+.font-bold h2,
+.font-bold h3,
+.font-bold h4,
+.font-bold h5,
+.font-bold h6,
+.font-bold p,
+.font-bold div,
+.font-bold i {
+    font-weight: bold !important;
+}
+
+
+body.high-contrast {
+  --primary-color: #000;                      /* Preto absoluto */
+  --primary-color-op: rgba(0, 0, 0, 0.8);
+  --quick: 'Arial Black', sans-serif;
+  --julius: 'Arial Black', sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+body.high-contrast .box-view-open {
+  background-color: #fff;
+  color: #000;
+}
+
+body.high-contrast .container-box-view,
+body.high-contrast .container-box-view i,
+body.high-contrast #eye-view {
+  background-color: #000;
+  color: #fff;
+}
+
+body.high-contrast .section-categories {
+  background-color: #fff;
+  color: #000;
+}
+
+body.high-contrast .animation::after {
+  background-color: #000;
+}
+
+body.high-contrast .category .category-img {
+  background-color: #fff;
+  border: 3px solid #000;
+}
+body.high-contrast .category:hover .category-img {
+  background-color: #000;
+}
+
+body.high-contrast a {
+  color: #000;
+  text-decoration: underline;
+}
+
+body.high-contrast .product #price-before {
+  color: #555;
+}
+body.high-contrast .product #price-now {
+  color: #000;
+  font-weight: bold;
+}
+
+body.high-contrast .btn-list #btn-background {
+  background-color: #000;
+  color: #fff;
+}
+
+body.high-contrast .btn-product #buy-now {
+  background-color: #000;
+  color: #fff;
+}
+body.high-contrast .btn-product #add-cart {
+  background-color: #333;
+  color: #fff;
+}
+
+body.high-contrast footer,
+body.high-contrast footer .footer-info .medias i,
+body.high-contrast footer .footer-info {
+  background-color: #000;
+  color: #fff;
+}
+
+body.high-contrast img {
+  filter: contrast(120%);
+}
+
+body.high-contrast input,
+body.high-contrast button,
+body.high-contrast select,
+body.high-contrast textarea {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+
+body.high-contrast ::placeholder {
+  color: #000;
+  opacity: 1;
+}
+
+body.high-contrast footer .footer-extra p,
+body.high-contrast footer .footer-extra a
+  {
+  color: #000;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKtravel</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    
+    <link rel="website icon" href="img/logo.png">
+</head>
+<body id="body">
+    <header>
+        <div class="container">
+            <nav class="logo">
+                <img src="img/logo.png" alt="logo" width="120px" height="60px">
+            </nav>
+            <nav class="btn-container">
+                <button onclick="scrollAbout()">
+                    Sobre
+                </button>
+
+                <button onclick="scrollItems()">
+                    Equipamento
+                </button>
+
+                <button onclick="scrollBlog()">
+                    <i class="ri-blogger-line"></i>
+                    Blog
+                </button>
+            </nav>
+            <nav class="account">
+                <button>
+                    <i class="ri-user-line"></i>
+                    Conta
+                </button>
+            </nav>
+            <button class="btn-menu">
+                <i class="ri-menu-line"></i>
+            </button>
+        </div>
+
+        <div class="sidebar" id="sideBar">
+            <button>
+                Sobre
+            </button>
+            <button>
+                Equipamento
+            </button>
+            <button>
+                <i class="ri-blogger-line"></i>
+                Blog
+            </button>
+            <button>
+                <i class="ri-user-line"></i>
+                Conta
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="introduction-box">
+            <div class="guide">
+                <div class="line"></div>
+                <h3>Um guia de caminhada</h3>
+            </div>
+            <h1 class="title">Esteja preparado para as mostanhas e mais!</h1>
+            <button onclick="scrollDown()" class="scroll">
+                Deslizar para baixo
+                <i class="ri-arrow-down-line"></i>
+            </button>
+        </div>
+        
+        <div class="follow-box">
+            <h4>Nos siga</h4>
+            <div class="medias-box">
+                <a href="https://www.instagram.com/" class="insta">
+                    <i class="ri-instagram-line"></i>
+                </a>
+                <a href="https://www.youtube.com/" class="youtube">
+                    <i class="ri-youtube-line"></i>
+                </a>
+            </div>
+        </div>        
+    </main>
+
+    <section class="about">
+        <div class="about-container" id="about">
+            <div class="box-about">
+                <div class="about_content-1">
+                    <h3 class="subtitle">Para começar</h3> 
+                    <div class="line"></div>
+                </div>
+
+                <h2 class="title-about">Qual seu nível de caminhante?</h2>
+                <p class="info-about">
+                    Seja você um novato em busca de caminhadas cênicas ou um trekker experiente em busca de subidas desafiadoras, 
+                    selecionamos uma variedade de trilhas para atender a todos os aventureiros. Descubra sua identidade de trilha
+                    , explore recomendações personalizadas e abrace a natureza com uma nova compreensão de suas capacidades.
+                </p>
+                
+                <button class="read-more">
+                    Ler mais
+                    <i class="ri-arrow-right-line"></i>
+                </button>
+            </div>    
+            <div>
+                <img class="image-1" src="img/img1.jpg" alt="img1" width="550px" height="380px">
+            </div>   
+        </div>
+
+        <div class="about-container reverso" id="items">
+            <div>
+                <img class="image-2" src="img/img2.jpg" alt="img1" width="550px" height="380px">
+            </div>   
+            <div class="box-about">
+                <div class="about_content-2">
+                    <div class="line"></div>
+                    <h3 class="subtitle">ESSENCIAIS PARA CAMINHADAS</h3> 
+                </div>
+                <h2 class="title-about">Escolhendo o equipamento certo para caminhadas!</h2>
+                <p class="info-about">
+                    De calçados duráveis ​​que superam trilhas acidentadas a mochilas leves que transportam seus itens essenciais 
+                    com facilidade, exploramos as complexidades da seleção de equipamentos para garantir que você esteja
+                    preparado para o sucesso em cada caminhada. Calce suas botas e comece a jornada com confiança, sabendo 
+                    que escolheu o equipamento certo para a trilha que tem pela frente!
+                </p>
+                <button class="read-more">
+                    Ler mais
+                    <i class="ri-arrow-right-line"></i>
+                </button>
+            </div>    
+        </div>
+
+        <div class="about-container" id="blog">
+            <div class="box-about">
+                <div class="about_content-3">
+                    <h3 class="subtitle">A CHAVE É ONDE VOCÊ VAI</h3> 
+                    <div class="line"></div>
+                </div>
+                <h2 class="title-about">Entendo seu mapa e tempo</h2>
+                <p class="info-about">
+                    Saber quando começar e antecipar as mudanças nas condições garante uma jornada segura e agradável. 
+                    Portanto, mergulhe nos detalhes, capte os contornos e sincronize seus passos com o ritmo da natureza.
+                    Não é apenas uma caminhada; é uma jornada orquestrada pelo seu mapa e cronometrada com perfeição.
+                </p>
+                <button class="read-more">
+                    Ler mais
+                    <i class="ri-arrow-right-line"></i>
+                </button>
+            </div>    
+            <div>
+                <img class="image-3" src="img/img3.jpg" alt="img1" width="550px" height="380px">
+            </div>   
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="box-info-footer">
+            <div class="introduction-footer">
+                <img src="img/logo.png" alt="logo" width="100px" height="50px">
+                <p>Saia e descubra sua próxima pista, montanhas e destino!</p>
+            </div>
+
+            <div class="info-footer">
+                <h4>Mais no Blog</h4>
+                <ul>
+                    <li>Sobre a MKtravel</li>
+                    <li>Colaboradores e escritores</li>
+                    <li>Escreva para nós</li>
+                    <li>Contate-nos</li>
+                    <li>Política de Privacidade</li>
+                </ul>
+            </div>
+
+            <div class="info-footer">
+                <h4>Mais em MKtravel</h4>
+                <ul>
+                    <li>A equipe</li>
+                    <li>Empregos</li>
+                    <li>Imprensa</li>
+                </ul> 
+            </div>
+        </div>
+
+        <div class="footer-bar">
+            <p>Copyright © 2025 Lucas Zorzete dos Reis. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/script.js"></script>
+    <script src="js/reveal.js"></script>
+</body>
+</html>
