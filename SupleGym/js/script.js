@@ -1,31 +1,70 @@
 document.addEventListener('DOMContentLoaded', function () {
-    //  Carrossel 1: Imagens com translateX
+    // Carrossel 1: Imagens com translateX
     const transformCarousel = document.querySelector('.transform-carousel');
     const transformSlides = Array.from(transformCarousel.children);
     const btnPrevTransform = document.querySelector('.carousel-button.prev');
     const btnNextTransform = document.querySelector('.carousel-button.next');
-    let currentIndex = 0;
+    let currentIndex = 0; // O slide inicial é o primeiro (índice 0)
+    const intervalTime = 3000; // Tempo em milissegundos para o autoplay (3 segundos)
+    let autoplayInterval; // Variável para armazenar o ID do intervalo do autoplay
 
+    // Função para atualizar a posição do carrossel
     function updateTransformCarousel() {
         const slideWidth = transformSlides[0].getBoundingClientRect().width;
         transformCarousel.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
     }
 
-    btnPrevTransform.addEventListener('click', () => {
+    // --- Funções para navegação manual e autoplay ---
+
+    // Avança para o próximo slide
+    const goToNextSlide = () => {
         currentIndex = (currentIndex + 1) % transformSlides.length;
         updateTransformCarousel();
-    });
+    };
 
-    btnNextTransform.addEventListener('click', () => {
+    // Volta para o slide anterior
+    const goToPrevSlide = () => {
         currentIndex = (currentIndex - 1 + transformSlides.length) % transformSlides.length;
         updateTransformCarousel();
+    };
+
+    // --- Autoplay ---
+
+    // Inicia o autoplay
+    const startAutoplay = () => {
+        autoplayInterval = setInterval(goToNextSlide, intervalTime);
+    };
+
+    // Para e reinicia o autoplay (útil ao clicar nos botões)
+    const resetAutoplay = () => {
+        clearInterval(autoplayInterval); // Limpa o intervalo atual
+        startAutoplay(); // Inicia um novo intervalo
+    };
+
+    // --- Event Listeners dos Botões ---
+
+    btnNextTransform.addEventListener('click', () => {
+        goToNextSlide(); // Avança o slide
+        resetAutoplay(); // Reinicia o autoplay
     });
 
-    window.addEventListener('resize', updateTransformCarousel);
-    updateTransformCarousel();
-});
+    btnPrevTransform.addEventListener('click', () => {
+        goToPrevSlide(); // Volta o slide
+        resetAutoplay(); // Reinicia o autoplay
+    });
 
-    
+    // --- Event Listeners de Redimensionamento e Inicialização ---
+
+    // Ajusta o carrossel quando a janela é redimensionada
+    window.addEventListener('resize', () => {
+        updateTransformCarousel();
+        resetAutoplay(); // Reinicia o autoplay para garantir a continuidade
+    });
+
+    // Chamada inicial para configurar o carrossel e iniciar o autoplay
+    updateTransformCarousel();
+    startAutoplay();
+});
 
 function openSideBar() {
     const sideBar = document.getElementById('sideBar');
