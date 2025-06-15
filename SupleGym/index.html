@@ -32,7 +32,7 @@
                 <img src="img/logo-draw.png" width="30px">
                 <img src="img/logo-word.png" width="100px">
             </div>
-            <i class="ri-close-large-line" onclick="closeView()"></i>
+            <i class="ri-close-large-line" id="close-btn" onclick="closeView()"></i>
         </div>
         <div class="box-view" id="boxView">
             <div class="interaction">
@@ -174,7 +174,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="homeSection">
         <div class="carousel-container">
             <div class="carousel-track transform-carousel" id="track">
                 <div class="carousel-slide">
@@ -214,7 +214,7 @@
         <h1 class="title-box-products">Ofertas Irrecusáveis</h1>
         <div class="container-box-products">
             <div class="box-products">
-                <div class="product one">
+                <div class="product one" id="productsSectionOne">
                     <div class="product-img">
                         <img src="img/product1.png" alt="product4">
                     </div>
@@ -292,7 +292,7 @@
                 </div>
             </div>
             <div class="box-products">
-                <div class="product five">
+                <div class="product five" id="productsSectionTwo">
                     <div class="product-img">
                         <img src="img/product5.webp" alt="product4">
                     </div>
@@ -372,7 +372,7 @@
         </div>
     </section>
     
-    <section class="section-categories">
+    <section class="section-categories" id="categoriesSection">
         <h1 class="title-box-products">Por categoria</h1>
         <div class="container-categories">
             <div class="category">
@@ -408,7 +408,7 @@
         </div>
     </section>
 
-    <section class="section-user-objectives">
+    <section class="section-user-objectives" id="objectivesSection">
         <h1 class="title-box-products">Qual seu objetivo?</h1>
         <div class="container-user-objectives">
             <div class="user-objective one">
@@ -449,7 +449,7 @@
         </div>
     </section>
 
-    <section class="section-tips">
+    <section class="section-tips" id="tipsSection">
         <div class="container-tips">
             <div class="tip">
                 <i class="ri-money-dollar-circle-fill"></i>

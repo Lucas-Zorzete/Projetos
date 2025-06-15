@@ -138,3 +138,28 @@ if (SpeechRecognitionRes) {
         micBtnRes.classList.remove('recording');
     });
 };
+
+// ACESSIBILIDADE COM ATALHOS DE TECLADO
+document.addEventListener('keydown', function(event) {
+    const key = event.key.toLowerCase();
+
+    const keyToButtom = {
+        'm': 'mic-btn',
+        'e': 'eye-view',
+        'c': 'close-btn',
+        '1': 'toggleColors',
+        '2': 'toggleSaturated',
+        '3': 'toggleSize',
+        '4': 'reader',
+        '5': 'toggleBold',
+        '6': 'toggleContrast',
+    };
+
+    const buttonId = keyToButtom[key];
+    if (buttonId) {
+        const button = document.getElementById(buttonId);
+        if (button) {
+            button.click();
+        }
+    }
+});
