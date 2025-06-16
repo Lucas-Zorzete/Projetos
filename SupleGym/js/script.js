@@ -18,13 +18,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Avança para o próximo slide
     const goToNextSlide = () => {
-        currentIndex = (currentIndex + 1) % transformSlides.length;
+        currentIndex = (currentIndex - 1 + transformSlides.length) % transformSlides.length;
         updateTransformCarousel();
     };
 
     // Volta para o slide anterior
     const goToPrevSlide = () => {
-        currentIndex = (currentIndex - 1 + transformSlides.length) % transformSlides.length;
+        currentIndex = (currentIndex + 1) % transformSlides.length;
         updateTransformCarousel();
     };
 
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Inicia o autoplay
     const startAutoplay = () => {
-        autoplayInterval = setInterval(goToNextSlide, intervalTime);
+        autoplayInterval = setInterval(goToPrevSlide, intervalTime);
     };
 
     // Para e reinicia o autoplay (útil ao clicar nos botões)
