@@ -11,11 +11,11 @@
 
 | Projeto | Descrição | Tecnologias | Link |
 |---------|-----------|--------------|------|
-| **Imobiliária de Luxo** | Landing page elegante e responsiva para uma imobiliária de alto padrão. | HTML, CSS, JavaScript, Figma | [🔗 Ver site](https://extraordinary-daifuku-18fce7.netlify.app/) |
-| **Agência de Viagens** | Página moderna com animações e foco em conversão de clientes. | HTML, CSS, JavaScript | [🔗 Ver site](https://unrivaled-bienenstitch-9794aa.netlify.app/) |
-| **Loja de Suplementos** | E-commerce fictício com foco em acessibilidade. | HTML, CSS, JavaScript | [🔗 Ver site](https://gregarious-halva-15fd34.netlify.app/) |
-| **Portfólio Pessoal** | Meu site pessoal com meus projetos, bio e contatos. | HTML, CSS, JavaScript | [🔗 Ver site](https://symphonious-syrniki-fbabeb.netlify.app/) |
+| **Imobiliária de Luxo** | Landing page elegante e responsiva para uma imobiliária de alto padrão. | HTML, CSS, JavaScript, Figma | [🔗 Ver site](https://apartbrain.netlify.app/) |
+| **Agência de Viagens** | Página moderna com animações e foco em conversão de clientes. | HTML, CSS, JavaScript | [🔗 Ver site](https://mktravel-agency.netlify.app/) |
+| **Loja de Suplementos** | E-commerce fictício com foco em acessibilidade. | HTML, CSS, JavaScript | [🔗 Ver site](https://suplegym.netlify.app/) |
 | **Snake Game (React)** | Jogo da cobrinha feito em React para treino de lógica. | React, JavaScript, CSS | 🔗 Em breve... |
+| **Projeto AquaGuard (Express)** | Website para a Mostra Nacional de Robótica 2025 (MNR). | HTML, JavaScript, CSS, Express | 🔗 Em breve... |
 
 ---
 
