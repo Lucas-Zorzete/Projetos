@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória - Cientistas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="box-game">
+    <div class="painel">
+      <h1>Memory Game - Mulheres na Ciência</h1>
+      <div class="scoreboard">
+          <div id="player1" class="player active">Jogador 1: <span>0</span></div>
+          <div id="player2" class="player">Jogador 2: <span>0</span></div>
+          <div id="player3" class="player">Jogador 3: <span>0</span></div>
+          <div id="player4" class="player">Jogador 4: <span>0</span></div>
+      </div>
+      <div class="game-board" id="game-board"></div>
+    </div>
+
+    <div class="btn-tips">
+      <button id="hint-button">Ver Dicas</button>
+      <div id="hint-panel" class="hidden">
+        <h2>Lista de Cientistas e Conquistas</h2>
+        <ul id="hint-list"></ul>
+        <button id="close-hint">Fechar</button>
+      </div>
+    </div>
+
+    <div class="name-group">
+      <ul>
+        <li>Lucas Zorzete n°27</li>
+        <li>Jhonatans n°21</li>
+        <li>Carlos Daniel n°05</li>
+        <li>Enzo Ridermam n°08</li>
+        <li>Ana Beatriz n°01</li>
+      </ul>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
