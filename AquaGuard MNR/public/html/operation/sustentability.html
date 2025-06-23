@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sustentabilidade</title>
+    <link rel="website icon" href="../../img/icon.jpg">
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-    
+    <header>
+        <nav class="container">
+            <img onclick="location.href='index.html'" src="../img/logo-azul.png" alt="logo" width="170px">
+            <ul class="btn-container">
+                <li class="btn-dropdown">
+                    SOBRE NÓS <i class="ri-arrow-up-s-line"></i>
+                    <div class="dropdown-menu">
+                        <button onclick="location.href='about-us/aquaguard.html'">O que é AquaGuard?</button>
+                        <button onclick="location.href='about-us/team.html'">Quem somos?</button>
+                    </div>
+                </li>
+
+                <li class="btn-dropdown">
+                    OBJETIVOS <i class="ri-arrow-up-s-line"></i>
+                    <div class="dropdown-menu">
+                        <button onclick="location.href='operation/impacts.html'">Benefícios e impactos</button>
+                        <button onclick="location.href='operation/sustentability.html'">Sustentabilidade</button>
+                    </div>
+                </li>
+                <li class="btn-dropdown">
+                    PROJETO <i class="ri-arrow-up-s-line"></i>
+                    <div class="dropdown-menu">
+                        <button onclick="location.href='project/circuit.html'">Circuito AquaGuard</button>
+                        <button onclick="location.href='project/code.html'">Introdução do código</button>
+                        <button onclick="location.href='project/recommendation.html'">Recomendações de uso</button>
+                    </div>
+                </li>
+                <li class="btn-dropdown" style="cursor: pointer;">GALERIA</li>
+            </ul>
+            <select class="languages-selector" name="languages" id="languages" onchange="mudarIdioma(this.value)">
+                <option value="pt">🇧🇷 Português</option>
+                <option value="en">🇺🇸 Inglês</option>
+                <option value="es">🇪🇸 Espanhol</option>
+            </select>
+        </nav>
+    </header>
 </body>
 </html>
