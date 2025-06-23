@@ -36,7 +36,7 @@
 
 Este repositório serve como uma **coleção pública dos meus projetos**, tanto de estudos quanto profissionais, feitos durante minha jornada de aprendizado e desenvolvimento.
 
-Se você quiser entender mais sobre mim, acesse meu portfólio: [🔗 Meu Portfólio](https://seuportfolio.com)  
+Se você quiser entender mais sobre mim, acesse meu portfólio: [🔗 Meu Portfólio](https://lzreis-portfolio.com)  
 Ou me adicione no LinkedIn: [🔗 Meu LinkedIn](https://linkedin.com/in/seuperfil)
 
 ---
