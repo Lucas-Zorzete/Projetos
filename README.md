@@ -36,8 +36,8 @@
 
 Este repositório serve como uma **coleção pública dos meus projetos**, tanto de estudos quanto profissionais, feitos durante minha jornada de aprendizado e desenvolvimento.
 
-Se você quiser entender mais sobre mim, acesse meu portfólio: [🔗 Meu Portfólio](https://lzreis-portfolio.com)  
-Ou me adicione no LinkedIn: [🔗 Meu LinkedIn](https://linkedin.com/in/seuperfil)
+Se você quiser entender mais sobre mim, acesse meu portfólio: [🔗 Meu Portfólio](https://lzreis-portfolio.netlify.app/)  
+Ou me adicione no LinkedIn: [🔗 Meu LinkedIn](https://www.linkedin.com/in/lucas-zorzete-6035a4369/)
 
 ---
 
