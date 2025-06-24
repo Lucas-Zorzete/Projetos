@@ -1,0 +1,26 @@
+.sustentability-index .box-sustentability-index .box-ods {
+  #ods-up {
+    animation: flutuar-cima 3s ease-in-out infinite;
+  }
+
+  #ods-down {
+    animation: flutuar-baixo 3s ease-in-out infinite;
+  }
+}
+
+@keyframes flutuar-cima {
+  0%, 100% {
+    transform: translateY(-20px)
+  }
+  50% {
+    transform: translateY(50px)
+  }
+}
+@keyframes flutuar-baixo {
+  0%, 100% {
+    transform: translateY(20px)
+  }
+  50% {
+    transform: translateY(-50px)
+  }
+}

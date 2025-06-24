@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto AquaGuard</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
     <link rel="website icon" href="../img/icon.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css">
@@ -37,7 +38,7 @@
                         <button onclick="location.href='project/recommendation.html'">Recomendações de uso</button>
                     </div>
                 </li>
-                <li class="btn-dropdown" style="cursor: pointer;">GALERIA</li>
+                <li onclick="location.href='gallery/gallery.html'" class="btn-dropdown" style="cursor: pointer;">GALERIA</li>
             </ul>
             <select class="languages-selector" name="languages" id="languages" onchange="mudarIdioma(this.value)">
                 <option value="pt">🇧🇷 Português</option>
@@ -46,6 +47,91 @@
             </select>
         </nav>
     </header>
+    
+    <main>
+        <div class="website-banner">
+            <img src="../img/banner.png" alt="banner">
+        </div>
+    </main>
+
+    
+    <section class="about-index">
+        <div class="box-about-index">
+            <div class="about-index-aquaguard">
+                <h1 id="title">A AquaGuard</h1>
+                <p>
+                    AquaGuard é um sistema de monitoramento ambiental que utiliza sensores para proteger recursos hídricos,
+                    detectando situações de risco, como poluição, e emitindo alertas para auxiliar na preservação do meio
+                    ambiente.
+                </p>
+            </div>
+            <div class="about-index-team">
+                <h1 id="title">A equipe GLD</h1>
+                <p>
+                    Somos um grupo de estudantes apaixonados por tecnologia, inovação e sustentabilidade. Unimos nossas 
+                    habilidades para desenvolver soluções que façam a diferença no mundo. Nosso nome representa a união 
+                    e o compromisso de cada integrante no desenvolvimento deste projeto.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sustentability-index">
+        <div class="box-sustentability-index">
+            <h1 id="title">Sustentabilidade e ODS's</h1>
+            <div class="box-ods">
+                <img src="../img/ods-9.webp" id="ods-up" alt="ODS 9" width="200px">
+                <img src="../img/ods-11.png" id="ods-down" alt="ODS 11" width="200px">
+                <img src="../img/ods-12.png" id="ods-up" alt="ODS 12" width="200px">
+                <img src="../img/ods-13.webp" id="ods-down"  alt="ODS 13" width="200px">
+            </div>
+        </div>
+    </section>
+
+    <section class="objectives-index">
+        <div class="box-objectives-index">
+            <div class="box-objectives-title">
+                <h2>NOTÍCIAS</h2>
+                <p>Nossos motivos para este projeto</p>
+            </div>
+            <div class="box-news">
+                <div class="new"> 
+                    <img src="../img/new-1.webp" alt="new 1" width="350px" height="250px">
+                    <p>
+                        Barragem transborda no norte do Paraná, água invade casas e deixa famílias desabrigadas
+                    </p>
+                </div>
+                <div class="new">
+                    <img src="../img/new-2.webp" alt="new 2" width="350px" height="250px">
+                    <p>
+                        Alagamento devido a transbordamento do Rio Iguaçu afeta abastecimento
+                    </p>
+                </div>
+                <div class="new">
+                    <img src="../img/new-3.jpeg" alt="new 3" width="350px" height="250px">
+                    <p>
+                        Caixa d’água estoura e cai na Penitenciária Estadual de Cascavel; afetado no complexo
+                    </p>    
+                </div>
+                <div class="new">
+                    <img src="../img/new-4.avif" alt="new 4" width="300px" height="250px">
+                    <p>
+                        Mesmo com caixa d’água de mil litros, morador enfrenta falta de água há três dias
+
+                    </p>
+                </div>
+                <div class="new">
+                    <img src="../img/new-5.jpeg" alt="new 5" width="400px" height="250px">
+                    <p>
+                        Vazamento de água em reservatório chama atenção de moradores em Campo Grande
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <i class="ri-arrow-left-s-line"></i>
+        <i class="ri-arrow-right-s-line"></i>
+    </section>
 
     <script src="../js/script.js"></script>
 </body>
