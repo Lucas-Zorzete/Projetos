@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto AquaGuard</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="website icon" href="../img/icon.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css">
 </head>
 <body>
-    <header>
+    <header id="container-header" class="main-header">
         <nav class="container">
-            <img onclick="location.href='index.html'" src="../img/logo-azul.png" alt="logo" width="170px">
+            <img src="../img/wave1-container.png" id="wave-container-one" alt="onda 1" width="3%" height="96px">
+            <img src="..//img/wave2-container.png" id="wave-container-two" alt="onda 2" width="3%" height="96px">
+
+            <img onclick="location.href='index.html'" id="logo-container" src="../img/logo-azul.png" alt="logo" width="170px">
             <ul class="btn-container">
                 <li class="btn-dropdown">
                     SOBRE NÓS <i class="ri-arrow-up-s-line"></i>
@@ -57,7 +59,9 @@
     
     <section class="about-index">
         <div class="box-about-index">
+            <img src="../img/wave-aquaguard.png" id="wave-aquaguard" alt="onda aquaguard" width="30%">
             <div class="about-index-aquaguard">
+                <div class="line"></div>
                 <h1 id="title">A AquaGuard</h1>
                 <p>
                     AquaGuard é um sistema de monitoramento ambiental que utiliza sensores para proteger recursos hídricos,
@@ -65,7 +69,9 @@
                     ambiente.
                 </p>
             </div>
+            <img src="../img/wave-team.png" id="wave-team" alt="onda time" width="45%">
             <div class="about-index-team">
+                <div class="line"></div>
                 <h1 id="title">A equipe GLD</h1>
                 <p>
                     Somos um grupo de estudantes apaixonados por tecnologia, inovação e sustentabilidade. Unimos nossas 
@@ -79,6 +85,9 @@
     <section class="sustentability-index">
         <div class="box-sustentability-index">
             <h1 id="title">Sustentabilidade e ODS's</h1>
+            <img src="../img/wave1-ods.png" id="wave1-ods" alt="onda 1 ods" width="40%">
+            <img src="../img/wave2-ods.png" id="wave2-ods" alt="onda 2 ods" width="90%">
+
             <div class="box-ods">
                 <img src="../img/ods-9.webp" id="ods-up" alt="ODS 9" width="200px">
                 <img src="../img/ods-11.png" id="ods-down" alt="ODS 11" width="200px">
@@ -94,44 +103,148 @@
                 <h2>NOTÍCIAS</h2>
                 <p>Nossos motivos para este projeto</p>
             </div>
-            <div class="box-news">
-                <div class="new"> 
-                    <img src="../img/new-1.webp" alt="new 1" width="350px" height="250px">
-                    <p>
-                        Barragem transborda no norte do Paraná, água invade casas e deixa famílias desabrigadas
-                    </p>
-                </div>
-                <div class="new">
-                    <img src="../img/new-2.webp" alt="new 2" width="350px" height="250px">
-                    <p>
-                        Alagamento devido a transbordamento do Rio Iguaçu afeta abastecimento
-                    </p>
-                </div>
-                <div class="new">
-                    <img src="../img/new-3.jpeg" alt="new 3" width="350px" height="250px">
-                    <p>
-                        Caixa d’água estoura e cai na Penitenciária Estadual de Cascavel; afetado no complexo
-                    </p>    
-                </div>
-                <div class="new">
-                    <img src="../img/new-4.avif" alt="new 4" width="300px" height="250px">
-                    <p>
-                        Mesmo com caixa d’água de mil litros, morador enfrenta falta de água há três dias
+            <div class="carousel">
+                <button class="nav prev">❮</button>
 
-                    </p>
+                <div class="box-news">
+                    <div class="new"> 
+                        <img src="../img/new-1.webp" alt="new 1" width="350px" height="250px">
+                        <p>
+                            Barragem transborda no norte do Paraná, água invade casas e deixa famílias desabrigadas
+                        </p>
+                    </div>
+                    <div class="new">
+                        <img src="../img/new-2.webp" alt="new 2" width="350px" height="250px">
+                        <p>
+                            Alagamento devido a transbordamento do Rio Iguaçu afeta abastecimento
+                        </p>
+                    </div>
+                    <div class="new">
+                        <img src="../img/new-3.jpeg" alt="new 3" width="350px" height="250px">
+                        <p>
+                            Caixa d’água estoura e cai na Penitenciária Estadual de Cascavel; afetado no complexo
+                        </p>    
+                    </div>
+                    <div class="new">
+                        <img src="../img/new-4.avif" alt="new 4" width="350px" height="250px">
+                        <p>
+                            Mesmo com caixa d’água de mil litros, morador enfrenta falta de água há três dias
+    
+                        </p>
+                    </div>
+                    <div class="new">
+                        <img src="../img/new-5.jpeg" alt="new 5" width="350px" height="250px">
+                        <p>
+                            Vazamento de água em reservatório chama atenção de moradores em Campo Grande
+                        </p>
+                    </div>
                 </div>
-                <div class="new">
-                    <img src="../img/new-5.jpeg" alt="new 5" width="400px" height="250px">
-                    <p>
-                        Vazamento de água em reservatório chama atenção de moradores em Campo Grande
-                    </p>
-                </div>
+            
+                <button class="nav next">❯</button>
+            </div>
+        </div> 
+    </section>
 
+    <section class="project-index">
+        <div class="ornament">
+            <img src="../img/ornament-project.png" alt="enfeite" width="500px">
+        </div>
+
+        <div class="box-project-info">
+            <div class="title-project-index">
+                <h2 id="title">Nosso projeto</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">Circuito Aquaguard <span>▾</span></button>
+                    <div class="accordion-content">
+                        <p>
+                            O AquaGuard usa um sensor de umidade conectado a um Arduino Uno para monitorar o nível da água.
+                            Três LEDs indicam a situação: normal, atenção e crítico. Um buzzer emite um alerta
+                            sonoro quando o nível está muito baixo ou muito alto.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Introdução do código <span>▾</span></button>
+                    <div class="accordion-content">
+                        <p>
+                            É como uma receita de instruções que o Arduino segue para que o AquaGuard funcione.
+                            Ele lê o nível de água (usando o sensor) e, dependendo do resultado, acende uma
+                            luz (LED) de uma cor diferente e, em casos críticos, dispara um som de alerta (buzzer).
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Recomendações de uso <span>▾</span></button>
+                    <div class="accordion-content">
+                        <p>
+                            Instale o sensor em local fixo dentro da caixa d’água e proteja a parte eletrônica contra 
+                            umidade. Use fonte de energia estável, limpe o sensor regularmente e revise as conexões para 
+                            garantir o bom funcionamento do AquaGuard.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-        <i class="ri-arrow-left-s-line"></i>
-        <i class="ri-arrow-right-s-line"></i>
     </section>
+
+    <section class="gallery-banner-index">
+        <div class="box-gallery-index">
+            <div class="ornament-banner-gallery">
+                <img src="../img/lines-banner.png" id="lines" alt="linhas curvadas" width="380px">
+                <div class="gray-box"></div>
+                <img src="../img/circuit.jpg" id="circuit-photo" alt="foto circuito" width="350px">
+            </div>
+
+            <div class="gallery-info-index">
+                <div class="gallery-text-index">
+                    <h1 id="title" style="line-height: 1.5em;">Cheque nossa galeria!</h1>
+                    <p>
+                        <a href="gallery/gallery.html">
+                            Cheque mais 
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <button id="btn-up"><i class="ri-arrow-up-s-line"></i></button>
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="logo-footer">
+                    <img src="../img/logo-branco.png" alt="logo" width="250px">
+                    <p>Preservando vidas</p>
+                </div>
+                <div class="credits">
+                    <p><strong>CRÉDITOS:</strong></p>
+                    <img src="../img/logo-mnr.png" alt="MNR" width="150px">
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <div class="social">
+                    <a href="https://www.instagram.com/luc4s_.r3is/?next=%2F" class="ri-instagram-line"></a>
+                    <a href="https://whatsa.me/5511984393259" class="ri-whatsapp-line"></a>
+                </div>
+                <div class="contact">
+                    <p><strong>FALE CONOSCO</strong></p>
+                    <p>lucasreis.zorzete@gmail.com</p>
+                    <p>+55 (11) 123456-7890</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>2025 © Todos os Direitos Reservados</p>
+            <p>Desenvolvido por <strong>Lucas Zorzete dos Reis</strong></p>
+        </div>
+    </footer>
 
     <script src="../js/script.js"></script>
 </body>

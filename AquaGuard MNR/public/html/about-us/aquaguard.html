@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O que é a AquaGuard?</title>
     <link rel="website icon" href="../../img/icon.jpg">
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/about-us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
 </head>
 <body>
-    <header>
+    <header id="container-header" class="main-header">
         <nav class="container">
-            <img onclick="location.href='../index.html'" src="../../img/logo-azul.png" alt="logo" width="170px">
+            <img src="../../img/wave1-container.png" id="wave-container-one" alt="onda 1" width="3%" height="96px">
+            <img src="../../img/wave2-container.png" id="wave-container-two" alt="onda 2" width="3%" height="96px">
+
+            <img onclick="location.href='../index.html'" id="logo-container" src="../../img/logo-azul.png" alt="logo" width="170px">
             <ul class="btn-container">
                 <li class="btn-dropdown">
                     SOBRE NÓS <i class="ri-arrow-up-s-line"></i>
@@ -27,6 +32,7 @@
                         <button onclick="location.href='../operation/sustentability.html'">Sustentabilidade</button>
                     </div>
                 </li>
+
                 <li class="btn-dropdown">
                     PROJETO <i class="ri-arrow-up-s-line"></i>
                     <div class="dropdown-menu">
@@ -44,5 +50,42 @@
             </select>
         </nav>
     </header>
+
+
+
+    <footer>
+        <button id="btn-up"><i class="ri-arrow-up-s-line"></i></button>
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="logo-footer">
+                    <img src="../../img/logo-branco.png" alt="logo" width="250px">
+                    <p>Preservando vidas</p>
+                </div>
+                <div class="credits">
+                    <p><strong>CRÉDITOS:</strong></p>
+                    <img src="../../img/logo-mnr.png" alt="MNR" width="150px">
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <div class="social">
+                    <a href="https://www.instagram.com/luc4s_.r3is/?next=%2F" class="ri-instagram-line"></a>
+                    <a href="https://whatsa.me/5511984393259" class="ri-whatsapp-line"></a>
+                </div>
+                <div class="contact">
+                    <p><strong>FALE CONOSCO</strong></p>
+                    <p>lucasreis.zorzete@gmail.com</p>
+                    <p>+55 (11) 123456-7890</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>2025 © Todos os Direitos Reservados</p>
+            <p>Desenvolvido por <strong>Lucas Zorzete dos Reis</strong></p>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
 </body>
 </html>
