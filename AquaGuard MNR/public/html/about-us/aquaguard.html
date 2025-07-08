@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,8 @@
     <title>O que é a AquaGuard?</title>
     <link rel="website icon" href="../../img/icon.jpg">
     <link rel="stylesheet" href="../../css/index.css">
+[    <link rel="stylesheet" href="../../css/sidebar.css">
+    <link rel="stylesheet" href="../../css/responsive-about.css">]
     <link rel="stylesheet" href="../../css/about-us.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
 </head>
@@ -49,11 +52,118 @@
                 <option value="es">🇪🇸 Espanhol</option>
             </select>
         </nav>
+
+        <nav class="sidebar" id="sidebar">
+            <div class="btn-dropdown-sidebar">
+                <button class="accordion-sidebar">SOBRE NÓS</button>
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <button onclick="location.href='about-us/aquaguard.html'">O que é AquaGuard?</button>
+                    <button onclick="location.href='about-us/team.html'">Quem somos?</button>
+                </div>
+            </div>
+            <div class="btn-dropdown-sidebar">
+                <button class="accordion-sidebar">OBJETIVOS</button>
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <button onclick="location.href='operation/impacts.html'">Benefícios e impactos</button>
+                    <button onclick="location.href='operation/sustentability.html'">Sustentabilidade</button>
+                </div>
+            </div>
+            <div class="btn-dropdown-sidebar">
+                <button class="accordion-sidebar">PROJETO</button>
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <button onclick="location.href='project/circuit.html'">Circuito AquaGuard</button>
+                    <button onclick="location.href='project/code.html'">Introdução do código</button>
+                    <button onclick="location.href='project/recommendation.html'">Recomendações de uso</button>
+                </div>
+            </div>
+            <div onclick="location.href='gallery/gallery.html'" class="btn-dropdown-sidebar" style="cursor: pointer;">
+                <button class="accordion-sidebar">GALERIA</button>
+            </div>
+
+            <select class="languages-selector" name="languages" id="languages" onchange="mudarIdioma(this.value)">
+                <option value="pt">🇧🇷 Português</option>
+                <option value="en">🇺🇸 Inglês</option>
+                <option value="es">🇪🇸 Espanhol</option>
+            </select>
+        </nav>
     </header>
+    
+    <section class="aquaguard-section">
+        <div class="background-aquaguard"></div>
+        <img src="../../img/light-image.png" id="light-image" alt="imagem aquaguard" width="400px">
 
+        <div class="aquaguard-info">
+            <div class="aquaguard-introduction">
+                <h1 id="title-aquaguard">A AquaGuard</h1>
+                <p>
+                    Nascido em 2025, a AquaGuard é um <span>sistema de monitoramento ambiental</span> que utiliza <span>sensores</span> para proteger recursos 
+                    hídricos, detectando situações de risco, como poluição, e emitindo alertas para auxiliar na <span>preservação do 
+                    meio ambiente.</span>
+                </p>
+                <p>
+                    E nosso nome representa exatamente o que desejamos plantar em nossa sociedade:
+                </p>
+            </div>
 
+            <div class="aquaguard-name">
+                <div class="meaning">
+                    <div class="aqua">
+                        <h2>Aqua</h2>
+                        <p>água</p>
+                    </div>
+                    <h2>+</h2>
+                    <div class="guard">
+                        <h2>Guard</h2>
+                        <p>guardião</p>
+                    </div>
+                </div>
+                <div class="line-mean"></div>
+                <div class="full-meaning">
+                    <h2>AquaGuard</h2>
+                    <p>guardião da água</p>
+                </div>
+            </div>
 
-    <footer>
+            <div class="aquaguard-objectives">
+                <div class="objectives-box">
+                    <h2 id="title-objective">NOSSA MISSÃO</h2>
+                    <p id="objective-info">
+                        Desenvolver soluções tecnológicas acessíveis e eficientes para monitoramento de reservatórios, caixas 
+                        d’água e corpos hídricos, promovendo a preservação dos recursos naturais e o uso consciente da água.
+                    </p>
+                </div>
+                <div class="objectives-box">
+                    <h2 id="title-objective">NOSSA VISÃO</h2>
+                    <p id="objective-info">
+                        Ser uma referência em tecnologia sustentável, contribuindo para um futuro onde a gestão dos 
+                        recursos hídricos seja inteligente, eficiente e alinhada com os princípios de preservação ambiental 
+                        e bem-estar coletivo.
+                    </p>
+                </div>
+                <div class="objectives-box">
+                    <h2 id="title-objective">NOSSO PROPÓSITO</h2>
+                    <p id="objective-info">
+                        Proteger a água, um dos bens mais preciosos do planeta, utilizando a robótica, a automação e a 
+                        tecnologia como ferramentas para gerar impacto ambiental positivo, conscientização social e 
+                        qualidade de vida.
+                    </p>
+                </div>
+                <div class="objectives-box">
+                    <h2 id="title-objective">NOSSOS VALORES</h2>
+                    <ul id="objectives-list">
+                        <li>Sustentabilidade</li>
+                        <li>inovação</li>
+                        <li>Responsabilidade social</li>
+                        <li>Educação e conhecimento</li>
+                        <li>Comprometimento</li>
+                        <li>Acessibilidade</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
         <button id="btn-up"><i class="ri-arrow-up-s-line"></i></button>
         <div class="footer-container">
             <div class="footer-left">
@@ -86,6 +196,20 @@
         </div>
     </footer>
 
-    <script src="../../js/script.js"></script>
+    <script>
+        window.addEventListener('scroll', () => {
+        const container = document.querySelector('.container');
+        if (window.scrollY > 50) {
+            container.classList.add('shrink');
+        } else {
+            container.classList.remove('shrink');
+        }
+        const btnUp = document.getElementById('btn-up');
+        const containerHeader = document.getElementById('container-header');
+        btnUp.addEventListener('click', () => {
+            containerHeader.scrollIntoView({behavior: 'smooth'});
+        });
+    });
+    </script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+@media (max-width: 1050px) {
+  .main-header .container {
+    padding: 0 2em;
+  }
+}
+
+@media (max-width: 850px) {
+  .main-header .container {
+    #btn-menu {
+      display: block;
+      font-size: 1.6em;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-dropdown,
+    .languages-selector {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Klee+One&family=League+Spartan:wght@100..900&display=swap');
+
+:root {
+  --primary-color: #F6F6F6;
+  --secondary-color: #0364AB;
+  --tertiary-color: #B2B2B2;
+  --quaternary-color: #6BBEC7;
+  --quintinary-color: #A8DEE4;
+  --senary-color: #4E577F;
+
+  --league: "League Spartan", sans-serif;
+  --klee: "Klee One", cursive;
+  --afacad: "Afacad", sans-serif;
+
+  --outline: 1px solid red;
+}
+
+.main-header .container {
+  #btn-menu {
+    display: none;
+    
+    font-size: 1.6em;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  #btn-close {
+    display: none;
+
+    font-size: 1.6em;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.main-header .sidebar {
+  opacity: 0;
+  display: none;
+  position: fixed;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -77.5%);
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  background-color: var(--primary-color);
+  padding: 2em;
+  border-top: 4px solid var(--secondary-color);
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  z-index: 1000;
+  
+  .accordion-sidebar {
+    font-weight: 600;
+    width: 100%;
+    align-items: start;
+    border: none;
+    border-top: 1px solid var(--tertiary-color);
+    font-family: var(--league);
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.1em;
+    padding: .8rem 0 .8rem 0;
+    cursor: pointer;
+  }
+  .accordion-sidebar:hover {
+    color: #5e5e5e;
+  }
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height .4s ease, opacity .4s ease;
+  
+    button {
+      background: none;
+      border: none;
+      font-family: var(--league);
+      margin: 0;
+      font-size: 1em;
+      border-top: 1px solid #d2d2d2;
+      width: 100%;
+      text-align: start;
+      padding: .7rem;
+      cursor: pointer;
+    }
+    button:hover {
+        color: #5e5e5e;
+    }
+  }
+  .btn-dropdown-sidebar.active .dropdown-menu {
+    max-height: 150px;
+    opacity: 1;
+  }
+  .languages-selector {
+    background-color: #ededed;
+    border: none;
+    margin-top: .5em;
+    font-family: var(--afacad);
+    font-size: 1em;
+    cursor: pointer;
+    padding: .6rem .4rem .6rem;
+    border-radius: 10px;
+  }
+  .languages-selector:focus {
+    outline: none;
+    box-shadow: 0 0 10px #0364AB;
+  }
+}

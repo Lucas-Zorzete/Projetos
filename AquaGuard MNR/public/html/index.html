@@ -6,6 +6,8 @@
     <title>Projeto AquaGuard</title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive-index.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
     <link rel="website icon" href="../img/icon.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
 </head>
@@ -42,6 +44,43 @@
                 </li>
                 <li onclick="location.href='gallery/gallery.html'" class="btn-dropdown" style="cursor: pointer;">GALERIA</li>
             </ul>
+            <select class="languages-selector" name="languages" id="languages" onchange="mudarIdioma(this.value)">
+                <option value="pt">🇧🇷 Português</option>
+                <option value="en">🇺🇸 Inglês</option>
+                <option value="es">🇪🇸 Espanhol</option>
+            </select>
+
+            <button id="btn-menu"><i class="ri-menu-line"></i></button>
+            <button id="btn-close"><i class="ri-close-line"></i></button>
+        </nav>
+
+        <nav class="sidebar" id="sidebar">
+            <div class="btn-dropdown-sidebar">
+                <button class="accordion-sidebar">SOBRE NÓS</button>
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <button onclick="location.href='about-us/aquaguard.html'">O que é AquaGuard?</button>
+                    <button onclick="location.href='about-us/team.html'">Quem somos?</button>
+                </div>
+            </div>
+            <div class="btn-dropdown-sidebar">
+                <button class="accordion-sidebar">OBJETIVOS</button>
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <button onclick="location.href='operation/impacts.html'">Benefícios e impactos</button>
+                    <button onclick="location.href='operation/sustentability.html'">Sustentabilidade</button>
+                </div>
+            </div>
+            <div class="btn-dropdown-sidebar">
+                <button class="accordion-sidebar">PROJETO</button>
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <button onclick="location.href='project/circuit.html'">Circuito AquaGuard</button>
+                    <button onclick="location.href='project/code.html'">Introdução do código</button>
+                    <button onclick="location.href='project/recommendation.html'">Recomendações de uso</button>
+                </div>
+            </div>
+            <div onclick="location.href='gallery/gallery.html'" class="btn-dropdown-sidebar" style="cursor: pointer;">
+                <button class="accordion-sidebar">GALERIA</button>
+            </div>
+
             <select class="languages-selector" name="languages" id="languages" onchange="mudarIdioma(this.value)">
                 <option value="pt">🇧🇷 Português</option>
                 <option value="en">🇺🇸 Inglês</option>

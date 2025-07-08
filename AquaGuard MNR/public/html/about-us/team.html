@@ -6,13 +6,20 @@
     <title>Quem nós somos?</title>
     <link rel="website icon" href="../../img/icon.jpg">
     <link rel="stylesheet" href="../../css/index.css">
+<link rel="stylesheet" href="../../css/sidebar.css">
+    <link rel="stylesheet" href="../../css/responsive-about.css">
+    <link rel="stylesheet" href="../../css/about-us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
 </head>
 <body>
-    <header>
+    <header id="container-header" class="main-header">
         <nav class="container">
-            <img onclick="location.href='../index.html'" src="../../img/logo-azul.png" alt="logo" width="170px">
+            <img src="../../img/wave1-container.png" id="wave-container-one" alt="onda 1" width="3%" height="96px">
+            <img src="../../img/wave2-container.png" id="wave-container-two" alt="onda 2" width="3%" height="96px">
+
+            <img onclick="location.href='../index.html'" id="logo-container" src="../../img/logo-azul.png" alt="logo" width="170px">
             <ul class="btn-container">
-                <li class="btn-dropdown">
+                <li class="btn-dropdown" onclick="location.href='aquaguard.html'">
                     SOBRE NÓS <i class="ri-arrow-up-s-line"></i>
                     <div class="dropdown-menu">
                         <button onclick="location.href='aquaguard.html'">O que é AquaGuard?</button>
@@ -20,14 +27,15 @@
                     </div>
                 </li>
 
-                <li class="btn-dropdown">
+                <li class="btn-dropdown" onclick="location.href='../operation/impacts.html'">
                     OBJETIVOS <i class="ri-arrow-up-s-line"></i>
                     <div class="dropdown-menu">
                         <button onclick="location.href='../operation/impacts.html'">Benefícios e impactos</button>
                         <button onclick="location.href='../operation/sustentability.html'">Sustentabilidade</button>
                     </div>
                 </li>
-                <li class="btn-dropdown">
+
+                <li class="btn-dropdown" onclick="location.href='../project/circuit.html'">
                     PROJETO <i class="ri-arrow-up-s-line"></i>
                     <div class="dropdown-menu">
                         <button onclick="location.href='../project/circuit.html'">Circuito AquaGuard</button>
@@ -43,6 +51,118 @@
                 <option value="es">🇪🇸 Espanhol</option>
             </select>
         </nav>
+
+        <nav class="sidebar" id="sidebar">
+            <div class="btn-dropdown-sidebar">
+                <button class="accordion-sidebar">SOBRE NÓS</button>
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <button onclick="location.href='about-us/aquaguard.html'">O que é AquaGuard?</button>
+                    <button onclick="location.href='about-us/team.html'">Quem somos?</button>
+                </div>
+            </div>
+            <div class="btn-dropdown-sidebar">
+                <button class="accordion-sidebar">OBJETIVOS</button>
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <button onclick="location.href='operation/impacts.html'">Benefícios e impactos</button>
+                    <button onclick="location.href='operation/sustentability.html'">Sustentabilidade</button>
+                </div>
+            </div>
+            <div class="btn-dropdown-sidebar">
+                <button class="accordion-sidebar">PROJETO</button>
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <button onclick="location.href='project/circuit.html'">Circuito AquaGuard</button>
+                    <button onclick="location.href='project/code.html'">Introdução do código</button>
+                    <button onclick="location.href='project/recommendation.html'">Recomendações de uso</button>
+                </div>
+            </div>
+            <div onclick="location.href='gallery/gallery.html'" class="btn-dropdown-sidebar" style="cursor: pointer;">
+                <button class="accordion-sidebar">GALERIA</button>
+            </div>
+
+            <select class="languages-selector" name="languages" id="languages" onchange="mudarIdioma(this.value)">
+                <option value="pt">🇧🇷 Português</option>
+                <option value="en">🇺🇸 Inglês</option>
+                <option value="es">🇪🇸 Espanhol</option>
+            </select>
+        </nav>
     </header>
+
+    <section class="team-section">
+        <div class="background-team"></div>
+
+        <div class="team-box-info">
+            <div class="title-team">
+                <div class="line"></div>
+                <h1 id="title">Quem somos</h1>
+                <h2>Equipe GDL</h2>
+            </div>
+
+            <div class="users-box">
+                <div class="user-box">
+                    <img src="../../img/user.png" id="user1" alt="usuário" width="180px">
+                    <p id="name1">Gustavo Hanai Peres</p>
+                </div>
+                <div class="user-box">
+                    <img src="../../img/user.png" id="user2" alt="usuário" width="180px">
+                    <p id="name2">Danilo Cardoso Pinto</p>
+                </div>
+                <div class="user-box">
+                    <img src="../../img/user.png" id="user3" alt="usuário" width="180px">
+                    <p id="name3">Lucas Zorzete dos Reis</p>
+                </div>
+            </div>
+        </div>
+        
+        <img src="../../img/ornament-team.png" id="ornament" alt="enfeite" width="400px" height="450px">
+    </section>
+
+    <footer class="footer-team">
+        <button id="btn-up"><i class="ri-arrow-up-s-line"></i></button>
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="logo-footer">
+                    <img src="../../img/logo-branco.png" alt="logo" width="250px">
+                    <p>Preservando vidas</p>
+                </div>
+                <div class="credits">
+                    <p><strong>CRÉDITOS:</strong></p>
+                    <img src="../../img/logo-mnr.png" alt="MNR" width="150px">
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <div class="social">
+                    <a href="https://www.instagram.com/luc4s_.r3is/?next=%2F" class="ri-instagram-line"></a>
+                    <a href="https://whatsa.me/5511984393259" class="ri-whatsapp-line"></a>
+                </div>
+                <div class="contact">
+                    <p><strong>FALE CONOSCO</strong></p>
+                    <p>lucasreis.zorzete@gmail.com</p>
+                    <p>+55 (11) 123456-7890</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>2025 © Todos os Direitos Reservados</p>
+            <p>Desenvolvido por <strong>Lucas Zorzete dos Reis</strong></p>
+        </div>
+    </footer>
+
+    <script>
+    window.addEventListener('scroll', () => {
+        const container = document.querySelector('.container');
+        if (window.scrollY > 50) {
+            container.classList.add('shrink');
+        } else {
+            container.classList.remove('shrink');
+        }
+    });
+    const btnUp = document.getElementById('btn-up');
+    const containerHeader = document.getElementById('container-header');
+    btnUp.addEventListener('click', () => {
+        containerHeader.scrollIntoView({behavior: 'smooth'});
+    });
+    </script>
 </body>
 </html>
