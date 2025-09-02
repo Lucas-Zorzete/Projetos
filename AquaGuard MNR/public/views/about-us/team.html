@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
 </head>
 <body>
+    <div class="black-background" id="background"></div>
+
     <header id="container-header" class="main-header">
         <nav class="container">
             <img src="../../img/wave1-container.png" id="wave-container-one" alt="onda 1" width="3%" height="96px">
@@ -98,20 +100,86 @@
             </div>
 
             <div class="users-box">
-                <div class="user-box">
+                <div class="user-box gustavo">
                     <img src="../../img/user.png" id="user1" alt="usuário" width="180px">
-                    <p id="name1">Gustavo Hanai Peres</p>
+                    <div id="name1">Gustavo Hanai Peres</div>
                 </div>
-                <div class="user-box">
+                <div class="user-box danilo">
                     <img src="../../img/user.png" id="user2" alt="usuário" width="180px">
                     <p id="name2">Danilo Cardoso Pinto</p>
                 </div>
-                <div class="user-box">
+                <div class="user-box lucas">
                     <img src="../../img/user.png" id="user3" alt="usuário" width="180px">
                     <p id="name3">Lucas Zorzete dos Reis</p>
                 </div>
             </div>
+
         </div>
+
+        <div class="user-info gustavo" id="user-info-gustavo">
+            <h2 id="nameUser">Gustavo Hanai Peres</h2>
+            <h3 id="subtitle">Técnico de T.I. da Fundação Bradesco</h3>
+            <p id="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum iusto natus ipsa aspernatur maiores quis reiciendis similique voluptatem iure temporibus porro beatae commodi cupiditate, quisquam accusantium optio ratione hic.</p>
+            <button class="btn-close-info" id="btn-close-gustavo">Fechar</button>
+        </div>
+
+        <div class="user-info danilo" id="user-info-danilo">
+            <h2 id="nameUser">Danilo Cardoso Pinto</h2>
+            <h3 id="subtitle">Técnico de T.I. da Fundação Bradesco</h3>
+            <p id="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum iusto natus ipsa aspernatur maiores quis reiciendis similique voluptatem iure temporibus porro beatae commodi cupiditate, quisquam accusantium optio ratione hic.</p>
+            <button class="btn-close-info" id="btn-close-danilo">Fechar</button>
+        </div>
+
+        <div class="user-info lucas" id="user-info-lucas">
+            <h2 id="nameUser">Lucas Zorzete dos Reis</h2>
+            <h3 id="subtitle">Técnico de T.I. da Fundação Bradesco</h3>
+            <p id="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum iusto natus ipsa aspernatur maiores quis reiciendis similique voluptatem iure temporibus porro beatae commodi cupiditate, quisquam accusantium optio ratione hic.</p>
+            <button class="btn-close-info" id="btn-close-lucas">Fechar</button>
+        </div>
+
+        <script>
+            const btnCloseGus = document.getElementById('btn-close-gustavo');
+            const btnCloseDan = document.getElementById('btn-close-danilo');
+            const btnCloseLuc = document.getElementById('btn-close-lucas');
+            const background = document.getElementById('background');
+            const userInfoGus = document.getElementById('user-info-gustavo');
+            const userInfoDan = document.getElementById('user-info-danilo');
+            const userInfoLuc = document.getElementById('user-info-lucas');
+            const user1 = document.getElementById('user1');
+            const user2 = document.getElementById('user2');
+            const user3 = document.getElementById('user3');
+
+            user1.addEventListener('click', () => {
+                userInfoGus.style.display = "flex";
+                userInfoGus.style.flexDirection = "column";
+                background.style.display = "block"; 
+
+                btnCloseGus.addEventListener('click', () => {
+                    userInfoGus.style.display = "none";
+                    background.style.display = "none";
+                });
+            });
+            user2.addEventListener('click', () => {
+                userInfoDan.style.display = "flex";
+                userInfoDan.style.flexDirection = "column";
+                background.style.display = "block"; 
+
+                btnCloseDan.addEventListener('click', () => {
+                    userInfoDan.style.display = "none";
+                    background.style.display = "none";
+                });
+            });
+            user3.addEventListener('click', () => {
+                userInfoLuc.style.display = "flex";
+                userInfoLuc.style.flexDirection = "column";
+                background.style.display = "block"; 
+
+                btnCloseLuc.addEventListener('click', () => {
+                    userInfoLuc.style.display = "none";
+                    background.style.display = "none";
+                });
+            });
+        </script>
         
         <img src="../../img/ornament-team.png" id="ornament" alt="enfeite" width="400px" height="450px">
     </section>
@@ -150,19 +218,19 @@
     </footer>
 
     <script>
-    window.addEventListener('scroll', () => {
-        const container = document.querySelector('.container');
-        if (window.scrollY > 50) {
-            container.classList.add('shrink');
-        } else {
-            container.classList.remove('shrink');
-        }
-    });
-    const btnUp = document.getElementById('btn-up');
-    const containerHeader = document.getElementById('container-header');
-    btnUp.addEventListener('click', () => {
-        containerHeader.scrollIntoView({behavior: 'smooth'});
-    });
+        window.addEventListener('scroll', () => {
+            const container = document.querySelector('.container');
+            if (window.scrollY > 50) {
+                container.classList.add('shrink');
+            } else {
+                container.classList.remove('shrink');
+            }
+        });
+        const btnUp = document.getElementById('btn-up');
+        const containerHeader = document.getElementById('container-header');
+        btnUp.addEventListener('click', () => {
+            containerHeader.scrollIntoView({behavior: 'smooth'});
+        });
     </script>
 </body>
 </html>

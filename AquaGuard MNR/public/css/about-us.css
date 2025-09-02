@@ -15,6 +15,16 @@
     --outline: 1px solid red;
 }
 
+.black-background {
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%; height: 100%;
+    z-index: 1000;
+}
+
 .aquaguard-section {
     .background-aquaguard {
         position: relative;
@@ -101,9 +111,9 @@
 
     .background-team {
         background-color: var(--octonary-color);
-        width: 70%; height: 30em;
+        width: 80%; height: 30em;
         position: relative;
-        margin: 0 10em 0 15em; 
+        margin: 0 25em 0 10em; 
     }
     .team-box-info {
         .users-box {
@@ -111,7 +121,7 @@
             align-items: center;
             position: absolute;
             top: 30%;
-            margin: 0 8em;
+            margin: 0 6em;
 
             .user-box {
                 display: flex;
@@ -123,12 +133,6 @@
                 #user3 {
                     cursor: pointer;
                 }
-                #user1:hover,
-                #user2:hover,
-                #user3:hover {
-
-                }
-
                 #name1,
                 #name2,
                 #name3 {    
@@ -141,17 +145,21 @@
                     margin: 1em 2em 0 2em;
                     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
                 }
-                #name1:hover,
-                #name2:hover,
-                #name3:hover {
-                    opacity: 1;
-                }
+            }
+            .user-box.gustavo:hover #name1 {
+                opacity: 1;
+            }
+            .user-box.danilo:hover #name2 {
+                opacity: 1;
+            }
+            .user-box.lucas:hover #name3 {
+                opacity: 1;
             }
         }   
         .title-team {
             position: absolute;
             top: 20%;
-            right: 18%;
+            right: 12%;
             text-align: right;
 
             h1 {
@@ -165,8 +173,40 @@
     }
     #ornament {
         position: absolute;
-        right: 10%;
+        right: 6%;
         top: 30%;
+    }
+
+    .user-info {
+        z-index: 1000;
+        background-color: #fff;
+        width: 70%; height: 60%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1.3rem;
+        display: none;
+        border-radius: 2em;
+        font-family: var(--league);
+
+
+        #info {
+            line-height: 2em;
+        }
+        .btn-close-info {
+            font-family: var(--afacad);
+            font-size: 1.05em;
+            width: 100px;
+            cursor: pointer;
+            background-color: rgb(186, 202, 255);
+            padding: .5rem .2rem;
+            border: none;
+            border-radius: 1em;
+        }
+        .btn-close-info:hover {
+            background-color: rgb(155, 179, 255);
+        }
     }
 }
 
